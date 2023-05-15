@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .con-box {
+            width: 650px; margin: 50px auto;
+            border: 1px solid #000; 
+            padding: 10px;
+        }
+        .con-box .box {
+            width: 100px; height: 100px;
+            margin: 10px; border: 1px solid #000;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-image: url(images/cat0.jpg);
+            background-size: cover;
+        }
+    </style>   
+</head>
+<body>
+   <div class="con-box">
+        <div class="box">
+            
+        </div>
+   </div>
+
+    <script>
+        'use strict';
+        let div,dom = document.querySelector('.con-box')
+        let txt;
+
+
+        for(let i=0; i<20; i++) {
+            let div = document.createElement('div');
+            div.classList.add('box');
+            dom.append(div)
+
+            // div.style.opacity = 0;
+            div.animate([
+                {opacity : 0},
+                {opacity : 1}
+            ], {
+                duration: 1000,
+                delay : i *300,
+                fill : 'forwards'
+            })
+        }
+    </script> 
+    
+</body>
+</html>

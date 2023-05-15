@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+    <script>
+        'use strict'
+
+        // let i, j, result,msg;
+        
+        // for(j =1; j<=9; j++) {
+        //     for(i = 2; i<=9; i++){
+        //         result = i*j;
+        //         msg = i+' * '+j+' = '+result;
+
+        //         document.write(msg+'&nbsp;&nbsp;&nbsp;');
+        //     }
+        //     document.write('<br>');
+        // }
+
+        let result,msg;
+        let check = 1;
+
+
+        while(check == 1){
+            let dan = prompt('단입력','');
+
+            if(isNaN(dan) || dan === '') {
+                alert('올바른 형식이아닙니다')
+                check = 0;
+            } else if(dan > 9 || dan < 2) {
+                alert('범위를 초과했습니다. 다시입력해주세요')
+                continue;
+            } else {
+                for(let i = 1; i <= 9; i++){
+                    result = dan * i;
+                    msg = dan+' * '+i+' = '+result+'<br>';
+
+                    document.write(msg);
+                }
+                check = 0;
+            }
+        }
+
+
+    </script> 
+</head>
+<body>
+   
+</body>
+</html>

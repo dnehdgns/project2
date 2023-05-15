@@ -1,0 +1,21 @@
+.con-box { width: 500px; margin: 50px auto; background: #ededed; padding: 30px; box-sizing: border-box;}
+.con-box h3 { font-size: 20px; margin-bottom: 15px; }
+.con-box ul {}
+.con-box ul li {  margin-bottom: 10px; background-repeat: no-repeat; background-position: 0 0;}
+.con-box ul li:nth-child(1) {background-image: url(../images/num01.png);}
+.con-box ul li:nth-child(2) {background-image: url(../images/num02.png);}
+.con-box ul li:nth-child(3) {background-image: url(../images/num03.png);}
+.con-box ul li:nth-child(4) {background-image: url(../images/num04.png);}
+.con-box ul li:nth-child(5) {background-image: url(../images/num05.png);}
+.con-box ul li:nth-child(6) {background-image: url(../images/num06.png);}
+
+
+/* 해결1 */
+.box ul li { height: 30px; line-height: 30px; text-indent: 40px; }
+
+/* 해결2 */
+.box1 ul li { line-height: 30px; text-indent: 40px; }
+
+/* 해결3 */
+.box2 ul li {  text-indent: 40px; padding: 3px 0;}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        div {
+            width: 100px; height: 100px;
+            background: skyblue;
+            position: relative;
+            left: 150px;
+            top: 150px;
+        }
+    </style>   
+</head>
+<body>
+   
+    <div></div>
+
+    <script>
+        'use strict';
+
+        let div = document.querySelector('div');
+        div.addEventListener('click', function(){
+            div.animate({
+                transform : ['translateX(0px) scale(1)', 'translateX(300px) scale(2)'],
+                backgroundcolor : ['skyblue', 'blue']
+            },3000);
+        })
+
+
+    </script> 
+    
+    <pre>
+
+    </pre>
+</body>
+</html>

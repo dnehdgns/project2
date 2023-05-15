@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+    </style>   
+</head>
+<body>
+    <input type="text">
+    <button>확인</button>
+    <p>xxx</p>
+    <script>
+        'use strict';
+        let input = document.querySelector('input');
+        let btn = document.querySelector('button');
+        let p = document.querySelector('p')
+        let txt = '';
+
+        btn.addEventListener('click', e => {
+            txt = input.value
+            txt = txt.indexOf(txt);
+
+            if(txt!=-1) {
+                p.textContent = '이메일형식이 맞음'
+            } else {
+                p.textContent = '이메일형식이 아님'
+            }
+        })
+    </script> 
+    
+</body>
+</html>

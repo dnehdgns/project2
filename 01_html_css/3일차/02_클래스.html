@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .con-box {}
+        .con-box ul {}
+        /* 요소.클래스 << 주로 팀작업할때 사용 */
+        .con-box ul li { background-color: aqua; font-size: 20px; color: red;}
+        .con-box ul li.a { background-color: aqua; font-size: 20px; color: black;}
+        .con-box ul .a { background-color: aquamarine;}
+        .con-box ul .b { background-color: blueviolet;}
+        .con-box ul .c { background-color: brown;}
+        .con-box ul .d { background-color: blue;}
+        .con-box ul .e { background-color: cadetblue;}
+        .con-box ul .f { background-color: lime;}
+    </style>
+</head>
+<body>
+
+    <div class="con-box">
+        <ul>
+            <li class="a">list1</li>
+            <li class="b">list2</li>
+            <li class="c">list3</li>
+            <li class="d">list4</li>
+            <li class="e">list5</li>
+            <li class="f">list6</li>
+        </ul>
+    </div>
+
+    <pre>
+        클래스 선택자
+        별명/별칭
+        한페이지에 여러번 사용 가능
+        형식
+        <태그 class="클래스명">
+        style: .클래스명
+
+        클래스명 규칙
+        1. 영문자, 숫자, _, - 혼용가능
+        2. 첫글자는 반드시 숫자제외
+            주로 영문자 소문자
+        3. 대소문자 구별한다
+        4. 특수문자 한글 사용불가
+        5. 두단어가 합쳐질경우
+            1) 단어-단어 : ex) dog-cat
+            1) 단어-단어 : ex) dog-cat
+            1) 단어단어첫글자대문자 : ex) dogCat
+        6.주로 영역(dive 집) 클래스를
+        작성하는것이 좋다
+
+        ex) 클래스: dog-cat
+            아이디: dogCat
+    </pre>
+</body>
+</html>

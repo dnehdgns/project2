@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <p id="skipNav"><a href="content">본문바로가기</a></p>
+    <div id="wrap">
+        <header id="header"></header>
+        <main id="container" class="main2">
+            <section id="content">
+                <div class="inner">
+                    <h2>자유게시판</h2>
+                    <p>자유게시판 입니다.</p>
+                    <form action="" method="post" name="form" onsubmit="return false">
+                        <fieldset>
+                            <legend>edit</legend>
+                            <table class="tb2">
+                                <caption></caption>
+                                <colgroup>
+                                    <col class="w1">
+                                    <col class="w2">
+                                    <col class="w3">
+                                    <col class="w4">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td><label for="postName"></label>제목</td>
+                                        <td colspan="3"><input type="text" id="postName" placeholder="게시한 제목 입니다."></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="postUser"></label>글쓴이</td>
+                                        <td><input type="text" id="postUser" placeholder="글쓴이 입력"></td>
+                                        <td><label for="postPw">비밀번호</label></td>
+                                        <td><input type="text" id="postPw" placeholder="비밀번호 입력"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p><textarea name="write" id="write" cols="150" rows="20" class="last"></textarea></p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="list"><a href="board.html">등록</a></button>
+                            <button class="edit"><a href="edit.html">취소</a></button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer id="footer"></footer>
+</body>
+</html>

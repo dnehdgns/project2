@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style0.css">
+    <style>
+        .box {
+            width: 480px;
+            margin: 15px auto;
+            border: 2px solid #000;
+            background-color: #efefef;
+            background: url(images/icon_2.png);
+            background-repeat: no-repeat;
+            background-position: right 35px top 35px;
+            padding: 35px 35px;
+        }
+        .box span {
+            font-size: 15px;
+            color: #AEAAAB;
+        }
+        .box h3 {
+            font-size: 25px;
+            font-weight: 500;
+            padding-bottom: 25px;
+            line-height: 1;
+        }
+        /* .box h3 {
+            font-size: 25px;
+            font-weight: 500;
+            padding-bottom: 25px;
+            margin-top: -3px;
+        } */
+        .box strong {
+            display: block;
+            font-size: 20px;
+            font-weight: 400;
+            padding-bottom: 35px;
+            line-height: 110%;
+        }
+        .box ul {
+            
+        }
+        .box ul li {
+            color: #AEAAAB;
+        }
+        /* 점 생성기 */
+        .box ul li::before {
+            content: ""; display: inline-block;
+            width: 2px; height: 2px; background: red;
+            vertical-align: middle; margin-right: 10px;
+        }
+        .box ul li:last-child {
+            padding-bottom: 30px;
+        }
+    </style>      
+</head>
+<body>
+    <div class="box">
+        <span>02</span>
+        <h3>실행</h3>
+        <strong>구체적으로 계획하고,<br>
+            철저하게 실행한다</strong>
+        <ul>
+            <li>성공을 목표로 빈틈없이 계획한다</li>
+            <li>결정한 일은 굳은 의지로 이루어낸다</li>
+            <li>결과를 통해 배우고 끊임없이 도전한다</li>
+        </ul>
+    </div>
+</body>
+</html>

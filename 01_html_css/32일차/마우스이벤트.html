@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style> 
+      .box {
+        width: 120px; height: 100px; background: tomato;  margin: 15px; font-size: 16px; 
+        display: flex; justify-content: center; align-items: center;
+        text-align: center;    
+      }
+      .box p {
+        width: 50px; height: 50px; background: yellow;
+      }
+      .output {
+        border: 1px solid #000;
+        width: 200px; padding: 20px; margin-top: 20px;
+      }
+      button { padding: 10px 25px;}
+    </style>   
+</head>
+<body>
+    
+    <div class="box box1">click</div>
+    <div class="box box2">dblclick / contextmenu</div>
+    <div class="box box3">mousedown / mouseup</div>
+    <div class="box box4">mousemove</div>
+    
+    <div class="box box5">
+      <p>test</p>
+    </div>
+    
+    <div class="box box6">
+      <p>test</p>
+    </div>
+  
+    <p>
+      <button class="btn">삭제</button>
+    </p>
+  
+    <div class="output">
+    </div>
+
+    <script>
+        'use strict';
+
+        let btn = document.querySelector('.btn');
+        let btn1 = document.querySelector('.box1');
+        let btn2 = document.querySelector('.box2');
+        let btn3 = document.querySelector('.box3');
+        let btn4 = document.querySelector('.box4');
+        let btn5 = document.querySelector('.box5 p');
+        let btn6 = document.querySelector('.box6 p');
+    
+        let output = document.querySelector('.output');
+
+        btn.addEventListener('click', e => {
+          output.textContent = '';
+        })
+
+        btn1.addEventListener('click', e => {
+          output.innerHTML += '<div>click</div>'
+        })
+
+        btn2.addEventListener('dblclick', e => {
+          output.innerHTML += '<div>double click</div>'
+        })
+        
+        btn2.addEventListener('contextmenu', e => {
+          output.innerHTML += '<div>right click</div>'
+        })
+
+        btn3.addEventListener('mouseup', e => {
+          output.innerHTML += '<div>mouseup</div>'
+        })
+        btn3.addEventListener('mousedown', e => {
+          output.innerHTML += '<div>mousedown</div>'
+        })
+
+        btn4.addEventListener('mousemove', e => {
+          output.innerHTML += '<div>mousemove</div>'
+        })
+
+        btn5.addEventListener('mouseenter', e => {
+          output.innerHTML += '<div>enter</div>'
+        })
+        btn5.addEventListener('mouseleave', e => {
+          output.innerHTML += '<div>leave</div>'
+        })
+
+        btn6.addEventListener('mouseover', e => {
+          output.innerHTML += '<div>over</div>'
+        })
+        btn6.addEventListener('mouseout', e => {
+          output.innerHTML += '<div>out</div>'
+        })
+
+    </script> 
+    
+</body>
+</html>

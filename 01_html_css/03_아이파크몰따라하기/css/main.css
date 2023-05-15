@@ -1,0 +1,40 @@
+div ul {
+    display:  flex;
+    margin: 50px auto;
+}
+
+button {
+    width: 80px;height: 80px; vertical-align: middle; justify-content: center;
+    margin-left: 80px; margin-top: 170px; background: #fff; border: 1px solid #000;
+}
+
+button i {
+    font-size: 25px;
+}
+
+div ul li {
+    padding-left: 80px; padding-right: 50px;
+}
+
+div ul li span {
+    display: block;
+    border-bottom: 2px solid #dcdcdc;
+    padding-right: 150px;
+    padding-left: 30px;
+}
+
+div ul li span.on {
+    border-bottom: 2px solid hotpink;
+}
+div ul li span.on h3{
+    color: hotpink;
+}
+
+div ul li h3 {
+    font-weight: 700;
+    padding-top: 15px;
+}
+div ul li p  {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}

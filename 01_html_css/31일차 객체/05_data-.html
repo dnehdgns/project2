@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+</head>
+<body>
+   
+    <div class="a1" data-name="cat1">aaaa</div>
+    <div class="a2" data-name="cat2" data-age="5">aaaa</div>
+    <div class="a3" data-list-name="cat3" data-list-age="6">aaaa</div>
+    <div class="a4" data-test-num1="30" data-test-num2="40">aaaa</div>
+
+    <script>
+        'use strict';
+
+        let dom1 = document.querySelector('.a1')
+        let dom2 = document.querySelector('.a2')
+        let dom3 = document.querySelector('.a3')
+        let dom4 = document.querySelector('.a4')
+
+        dom1.textContent = `${dom1.dataset.name}입니다`;
+        dom2.textContent = `${dom2.dataset.name}이고 나이는${dom2.dataset.age}입니다`;
+        dom3.textContent = `${dom3.dataset.listName}이고 나이는${dom3.dataset.listAge}입니다`;
+        dom4.textContent = `${dom4.dataset.testNum2}`
+
+        let num1 = Number(dom4.dataset.testNum1);
+        let num2 = Number(dom4.dataset.testNum2);
+        let sum = num1+num2;
+        console.log(sum);
+
+    </script> 
+    
+</body>
+</html>

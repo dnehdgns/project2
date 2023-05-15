@@ -1,0 +1,61 @@
+.main {
+    width: 100%; height: 700px;
+    background-image: url(../images/patient-bg.png);
+}
+
+.inner { width: 1000px; margin: auto; }
+.inner h2 {
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+}
+.inner ul.subText { display: flex; padding-top: 100px; }
+.inner ul.subText li {
+    margin-left: 100px;
+    margin-right: 100px;
+    color: #fff ;
+    font-size: 20px;
+    text-align: center;
+}
+.inner ul.subText li em { font-size: 13px; }
+.inner ul.subText li strong { font-size: 35px; }
+.inner ul.subText li p { padding-top: 30px; }
+
+.mainText {
+    margin-top: 100px;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 25px;
+    background: #fff;
+    border: none;
+    width: 1000px;
+    height: 500px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.mainText p:first-child { padding-right: 200px; font-size: 15px; }
+.mainText img { padding-right: 50px; }
+.mainText img+p { display: block; width: 200px; }
+.mainText img+p strong { font-weight: 500; }
+.mainText img+p em { display: block; margin-top: 10px; width: 400px; }
+.mainText li { margin-top: 150px; display:  flex; }
+
+.inner span { margin-left: 450px; }
+.inner span button {
+    padding : 8px 15px;
+    border: none;
+    background: #b3d6d2;
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-left: 10px;
+    transition: 0.4s;
+}
+
+.inner span button.on {
+    transition: 0.3s;
+    transform: scaleX(1.5);
+    background: #509d9c;
+} 

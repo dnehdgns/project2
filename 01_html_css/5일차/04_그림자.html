@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .con-box {
+            width: 600px; margin: auto;
+        }
+
+        .con-box .box {
+            width: 250px; height: 100px;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 100px;
+            margin: 10px;
+            display: inline-block;
+
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .con-box .box1 {
+            box-shadow: 5px 5px 0 #dcdcdc;
+            text-shadow: 3px 3px 0 #dcdcdc;
+        }
+        .con-box .box2 {
+            box-shadow: -10px -10px 10px #333;
+            text-shadow: 3px 3px 2px red;
+        }
+        .con-box .box3 {
+            box-shadow: 0 0 15px #333;
+            text-shadow: 0 0 3px red;
+        }
+        .con-box .box4 {
+            box-shadow: 5px 5px 0 red, 10px 10px 0 green, 15px 15px 0 hotpink;
+
+            text-shadow: 5px 5px 0 red, 10px 10px 0 green, 15px 15px 0 hotpink;
+        }
+        .con-box .box5 {
+            /* text는 inset기능 X */
+            /* box-shadow: inset 5px 5px 0 #dcdcdc; */
+            /* box-shadow: inset 0 0 10px #333; */
+            /* box-shadow: 0 0 0 15px #dcdcdc; */
+            box-shadow: inset 0 0 15px 15px #dcdcdc;
+        }
+        .con-box .box6 {
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="con-box">
+        <div class="box box1">test</div>
+        <div class="box box2">test</div>
+        <div class="box box3">test</div>
+        <div class="box box4">test</div>
+        <div class="box box5">test</div>
+        <div class="box box6">test</div>
+    </div>
+     
+    <pre>
+        ------------------
+        box-shadow / text-shadow
+
+
+        box-shadow
+        가로거리 세로거리 블러 색상
+        (px, % 양수 음수)
+        가로거리 세로거리 블러 그림자크기 색상
+    </pre>
+</body>
+</html>

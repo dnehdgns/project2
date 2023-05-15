@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+</head>
+<body>
+   <div>
+        <input type="checkbox" name="chk">
+   </div>
+   <p>카운트: </p>
+    <script>
+        'use strict';
+        let check = document.querySelector('input');
+        let p = document.querySelector('p');
+        let count = 0;
+        let timeId = null;
+
+        function time(){
+            count++;
+            p.textContent = `카운트: ${count}`;
+        }
+
+        check.addEventListener('change', () => {
+            if(check.checked) {
+                if(timeId == null){
+                    timeId = setInterval(time, 1000);
+                }
+            } else if(!check.checked) {
+                clearInterval(timeId);
+                timeId = null;
+            }
+        })
+    </script> 
+    
+</body>
+</html>

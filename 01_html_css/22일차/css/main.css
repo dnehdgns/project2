@@ -1,0 +1,39 @@
+#wrap {width: 100%; min-width: 1600px;}
+/* 페이지 공통 */
+.inner { width: 1000px; margin: auto; position: relative; box-sizing: border-box;}
+#header { background: #ffe100; border-bottom: 1px solid #c7b005;} 
+#header .inner { height: 80px; display: flex; justify-content: space-between;}
+#header h1 {padding: 25px 0;}
+#header .nav { transition: 1s;}
+#header .nav .gnb { display: flex;}
+#header .nav .gnb li { margin-left: 20px;}
+#header .nav .gnb li a { display: block; height: 80px; line-height: 80px; font-size: 18px; font-weight: 500; padding: 0 15px;}
+
+#header .nav .gnb li:not(:last-child) a::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #000;
+    transform: scaleX(0);
+}
+
+#header .nav .gnb li:hover a::after {
+    transform: scaleX(1);
+}
+
+#header .nav .gnb li:last-child {
+    display: flex; justify-content: space-between; align-items: center; margin-right: 15px;
+}
+#header .nav .gnb li:last-child a { line-height: 45px; height: 45px; border: 2px solid #fff; border-radius: 20px;}
+
+.bbs {}
+.bbs .inner { position: relative; }
+.bbs h2 { font-size: 30px; }
+.bbs h2 + p { position: absolute; left: 180px; top: 15px;}
+.bbs h3 { margin-top: 55px; font-size: 18px; margin-bottom: 25px;}
+.bbs table { width: 1100px; border: 1px solid #dcdcdc;}
+.bbs table .w1{width: 550px;}
+.bbs table .w2{width: 550px;}
+.bbs table th, .bbs table td {  border: 1px solid #dcdcdc; vertical-align: middle;} 
+.bbs table th { border-bottom: none; padding: 10px 0; background: #f4f4f4;}
+.bbs table tr td { padding: 15px 0; text-align: center;}
+.bbs table tr td:nth-child(2) { line-height: 100%;}

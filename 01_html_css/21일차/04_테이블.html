@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">   
+    <style>
+        /* table에는 반드시 너비가 존재해야만 한다. */
+        /* table 100% 처리 , 부모 div px */
+        table { width: 500px; }
+        /* 열 너비 용도 */
+        table .w1 { width: 100px;}
+        table .w2 { width: 100px;}
+        table .w3 {}
+
+
+        /* td, th 공통 */
+
+        table th, table td {
+            border: 1px solid #000;
+            height: 60px;
+            /* 세로 가운데정렬 */
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        table thead {}
+        /* tr에 css처리 조심 (하지않는게 좋다) */
+        table thead tr {}
+        table thead tr th { border-bottom: none; background: #dcdcdc; border-top: 2px solid #000;}
+    </style>
+      
+</head>
+<body>
+      <table>
+        <caption>
+            <strong>표제목</strong>
+            <p></p>
+        </caption>
+        <colgroup>
+            <!-- 칸(열) 너비 -->
+            <col class="w1">
+            <col class="w2">
+            <col class="w3">
+        </colgroup>
+        <!-- 테이블 제목 -->
+        <thead>
+            <th scope="col">제목1</th>
+            <th scope="col">제목2</th>
+            <th scope="col">제목3</th>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>합계</td>
+                <td>평균</td>
+                <td>통계</td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+            </tr>
+        </tbody>
+      </table>
+     
+      <pre>
+        thead - 1
+        tfoot - 2 (쓸수도있고 안쓸수도있음)
+        tbody - 3
+
+        th에만 scope 작성가능
+        scope = 'col'
+        scope = 'row'
+
+        thead - 타이틀
+        tbody - 본물 100줄
+        tfoot - 결론
+      </pre>
+</body>
+</html>

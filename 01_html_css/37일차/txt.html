@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        body {margin: 30px;}
+        ul { margin-top: 10px; }
+        ul li { 
+            width: 250px; line-height: 40px; border: 1px solid #000;
+            text-indent: 10px; margin-bottom: 5px;
+        }
+
+    </style>   
+</head>
+<body>
+    <input type="text" class="txt">
+    <button>추가</button>
+
+    <ul>
+        <!-- <li>aaa</li> -->
+    </ul>
+    <script>
+        'use strict';
+        let text = document.querySelector('input');
+        let btn = document.querySelector('button');
+        let ul = document.querySelector('ul')
+        let txt = '';
+
+        text.addEventListener('keyup', e => {
+            txt = text.value;
+        })
+
+        btn.addEventListener('click', e => {
+            let li = document.createElement('li');
+            li.textContent = txt;
+            ul.append(li);
+            text.value = '';
+            text.focus();
+        })
+    </script> 
+    
+</body>
+</html>

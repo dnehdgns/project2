@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+</head>
+<body>
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+
+    <script>
+        'use strict';
+
+        let p = document.getElementsByClassName('box');
+
+        for(let i=0; i<p.length; i++){
+            p[i].innerHTML = `.box의 [${i}]번째`;
+            p[i].style.width = '300px';
+            p[i].style.background = 'pink';
+            p[i].style.padding = '5px';
+            p[i].style.margin = '5px'
+        }
+    </script> 
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+    <script>
+        'use strict'
+        // function make() {
+        //     document.write('안녕하세요. <br>');
+        //     document.write('나는 홍길동입니다 <br>');
+        //     document.write('ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ. <br>');
+        // }
+
+        // make();
+
+        // for(let i=0;i<10;i++) {
+        //     make();
+        // }
+
+        function make(name, age) {
+            document.write(`이름은 ${name}이고 나이는 ${age}입니다 <br>`);
+        }
+
+        make('홍길동',12);
+        make('강호동',20);
+        make('송혜교',25);
+        make('김태리',30);
+    </script> 
+</head>
+<body>
+   <pre>
+    함수란?
+    자주사용하는 명령문,실행문,내용,문장 등을 담아두었다가, 필요할때 언제든지 꺼내사용하는 형태
+    장점 : 코드 줄이기, 코드 재사용
+
+    형식
+    function 함수명(할일){ : 함수명규칙 = 변수규칙
+        실행문
+    }
+    함수명();
+
+    형식2
+    function 함수명(매개변수,매개변수) {
+        실행문
+    }
+    함수명(값,값)
+    
+    형식2
+    function 함수명(매개변수,매개변수) {
+        실행문
+        return 반환값;
+    }
+    let 변수명 = 함수명(값,값)
+   </pre>
+</body>
+</html>

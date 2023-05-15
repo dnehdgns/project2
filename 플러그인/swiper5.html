@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <style>
+        #visual { width: 100%; position: relative;}
+        #visual .main-banner {}
+        #visual .main-banner li {}
+        #visual .main-banner li img {}
+
+        #visual .slick-arrow { position: absolute; top: 50%; z-index: 10; width: 70px; height: 70px; border-radius: 50%; background: #000 rgba(255,255,255,0.6); color: transparent;}
+        /* 글자를 못지우니 글자색 = 배경색으로 숨김 */
+        #visual .slick-arrow::after {
+            font-family: xeicon!important;
+            position: absolute;
+            font-size: 30px;
+            color: #333;
+            top: 50%; left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        #visual .slick-prev { left: 50px; }
+        #visual .slick-prev::after {content: "\e93d"; }
+        #visual .slick-next { right: 50px;}
+        #visual .slick-next::after { content: "\e940"; }
+    </style>
+    <script>
+        $(function(){
+            $('.slick').slick();
+        })
+    </script>
+</head>
+
+<body>
+    
+    <i class="xi-angle-left-thin"></i>
+    <i class="xi-angle-right-thin"></i>
+    <section id="visual">
+        <ul class="main-banner slick">
+            <li><img src="images/main0.jpg" alt=""></li>
+            <li><img src="images/main1.jpg" alt=""></li>
+            <li><img src="images/main2.jpg" alt=""></li>
+            <li><img src="images/main3.jpg" alt=""></li>
+        </ul>
+    </section>
+</body>
+
+</html>

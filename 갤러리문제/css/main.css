@@ -1,0 +1,29 @@
+#header {     width: 100%; background: #dcdcdd;    }
+#header .inner { width: 1400px; position: relative; margin: auto; height: 100px; }
+#header .inner h1 { position: absolute; top: 30px; left: 0; font-size: 25px; color:hotpink}
+
+.main {}        
+.main .inner { width: 1500px; margin: auto; position: relative; padding: 100px 0;}
+.main .con-box { }
+.main .con-box .list { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; } 
+.main .con-box .list li { width: 360px; cursor: pointer; margin-bottom: 20px;  border: 1px solid #000;} 
+.main .con-box .list li img { width:100%; transition: 0.3s;box-shadow: 0 2px 5px 0 rgba(200, 190, 190, 0.16), 0 2px 10px 0 rgba(132, 132, 132, 0.43); } 
+.main .con-box .list li:hover img { transform: scale(1.05);} 
+.main  .more { text-align: center; margin-top: 50px;} 
+.main  .more .btn { width: 300px; height: 40px; background: #000; color:#fff; border: none; cursor: pointer; } 
+
+.bg {
+    width: 100%; height: 100%; position: fixed; left: 0; top: 0; background: #000; z-index: 50; opacity: 0.4; display: none;
+}
+/* 팝업 */
+.popup-gallery { width: 358px; height: 480px; padding: 20px; position: fixed; left: 50%; top: 50%; z-index: 100; background: #fff;  transform: translate(-50%, -50%) scale(0.9); border: 1px solid #999; opacity: 0; pointer-events: none; }
+
+.popup-gallery.show { opacity: 1; pointer-events: auto; transform: translate(-50%, -50%) scale(1); transition: all 0.3s ease; pointer-events: auto;}
+
+.popup-gallery .gallelry-header { display: flex;  align-items: center;  padding: 12px 15px 12px 10px;  justify-content: space-between; font-size: 20px; }
+.popup-gallery .gallelry-header .total-img {  }
+.popup-gallery .gallelry-header .close{  }
+.popup-gallery .gallelry-body {  position: relative; }
+.popup-gallery .gallelry-body img { width: 100%;  }
+.popup-gallery .gallelry-body .btn { margin-top: 10px;  }
+.popup-gallery .gallelry-body .btn button { border-radius: 50%; width: 40px;height: 40px; background: #fff; border: 1px solid #000;  text-align: center; }

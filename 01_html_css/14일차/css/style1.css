@@ -1,0 +1,62 @@
+.con-box {}
+.con-box h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 30px;
+}
+.con-box .box {
+    width: 700px;
+    height: 450px;
+    background: #efefef;
+    margin: 50px auto;
+    box-sizing: border-box;
+    padding: 40px 50px;
+}
+.con-box .box h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.con-box .box ul {}
+.con-box .box ul li {
+    padding: 15px 0;
+    border-bottom: 1px dotted #999;
+}
+.con-box .box ul li:last-child{
+    border-bottom: none;
+}
+.con-box .box ul li a {}
+.con-box .box ul li a strong {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: aqua;
+    line-height: 1.2;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 12px;
+}
+.con-box .box ul li a p {
+    font-size: 18px;
+    width: 520px;
+}
+
+.con-box .con1 {}
+.con-box .con1 ul li a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.con-box .con1 {}
+.con-box .con1 ul li a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.con-box .con1 li a p{}
+
+
+.con-box .con2 {}

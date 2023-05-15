@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+    <script>
+        'use strict'
+
+        // for(let i = 0; i <= 10; i++) {
+        //     if(i==10) {
+        //         continue;
+        //     }
+        //     document.write(i+'<br>');
+        // }
+
+        let arr = ['가','나','다','라','마','바','사'];
+        
+
+        for(let i = 0; i<arr.length; i++) {
+            document.write(arr[i]+'<br>');
+        }
+
+        document.write('<br>')
+        for (let item of arr) {
+            document.write(item, "<br>")
+        }
+
+        for (let key in arr) {
+            document.write( key+'번째: '+ arr[key] +"<br>")
+        }
+
+    </script> 
+</head>
+<body>
+   
+</body>
+</html>

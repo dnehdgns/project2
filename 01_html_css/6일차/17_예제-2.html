@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .list { margin: 40px; }
+        .list li { 
+            margin-bottom: 10px;                       
+            border: 1px solid #000;
+        }
+        .list li::before {
+            content:"";
+            display: inline-block;
+            width: 3px;
+            height: 3px;
+            background: red;
+            border-radius: 50%;
+            margin-right: 15px;
+            /* vertical-align: middle; */
+            margin-bottom:3px;
+        }
+    </style>
+</head>
+<body>
+   
+    <!-- ul.list>li{게시물 입니다.}*6 -->
+    <ul class="list">
+        <li>게시물 입니다.</li>
+        <li>게시물 입니다.</li>
+        <li>게시물 입니다.</li>
+        <li>게시물 입니다.</li>
+        <li>게시물 입니다.</li>
+        <li>게시물 입니다.</li>
+    </ul>
+   
+</body>
+</html>

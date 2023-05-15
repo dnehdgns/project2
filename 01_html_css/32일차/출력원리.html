@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .list { margin: 50px; }
+        .list li { 
+            width: 250px; height: 40px; 
+            border: 1px solid #000;
+            text-align: center; line-height: 2;
+            font-size: 20px; margin-bottom: 5px;
+        }
+    </style>   
+</head>
+<body>
+   <ul class="list">
+        <!-- <li>사과</li>
+        <li>복숭아</li>
+        <li>참외</li>
+        <li>수박</li>
+        <li>오렌지</li> -->
+   </ul>
+
+    <script>
+        'use strict';
+        let arr = ['사과','복숭아','참외','수박','오렌지'];
+        let dom = document.querySelector('.list');
+        let li = '';
+
+        // li += `<li>${arr[0]}</li>`;
+        // li += `<li>${arr[1]}</li>`;
+        // li += `<li>${arr[2]}</li>`;
+        // li += `<li>${arr[3]}</li>`;
+        // li += `<li>${arr[4]}</li>`;
+
+        for(let i=0 ; i<arr.length; i++) {
+            li += `<li>${arr[i]}</li>`;
+        }
+        dom.innerHTML = li;
+
+        let li_all = document.querySelectorAll('.list li');
+
+        li_all.forEach(item => {
+            item.addEventListener('click', e => {
+                e.currentTarget.textContent = '안녕';
+            })
+        })
+    </script> 
+    
+</body>
+</html>

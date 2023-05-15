@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+    <script>
+        'use strict';
+
+        // 결과가 1개
+        const make1 = x => `${x} 값`
+        let x1 = make1(100);
+        // alert(x1);
+
+        // return 생략가능
+        const make2 = (x,y) => { return x*y; }
+        
+
+    </script> 
+</head>
+<body>
+   
+    <pre>
+        function make1() {
+            alert('실행문');
+        }
+        make1();
+
+        화살표함수
+        const make1 = () => {
+            alert('실행문');
+        }
+        make1();
+
+        function make1(x) {
+            alert(`${x} 값`)
+        }
+        make1();
+        
+        // 값이 1개일 경우 () 생략 가능
+        const make1 = x =>  {
+            alert(`${x} 값`)
+        }
+        make1(100);
+
+        function make1(x) {
+            return(`${x} 값`)
+        }
+        let x1 = make1(100);
+        alert(x1);
+
+        const make1 = (x) => {
+            return(`${x} 값`)
+        }
+        let x1 = make1(100);
+        alert(x1);
+
+        // 결과가 1개
+        const make1 = x => `${x} 값`
+        let x1 = make1(100);
+        alert(x1);
+    </pre>
+</body>
+</html>

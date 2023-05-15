@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+</head>
+<body>
+   <h1 id="h1">ㅁㅁㅁ</h1>
+   <h2 class="txt">ㅁㅁㅁ</h2>
+   <h3 class="txt">ㅁㅁㅁ</h3>
+
+   <div class="box">
+    <h2>제목</h2>
+    <ul>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+    </ul>
+   </div>
+
+    <script>
+        'use strict';
+
+        let h1 = document.querySelector('#h1');
+        h1.innerHTML ='제목1입니다';
+        h1.style.background = 'aqua';
+        h1.style.width = '200px'
+
+        let txt = document.querySelectorAll('.txt');
+
+
+        for(let i=0; i<txt.length; i++) {
+            txt[i].innerHTML = `제목${i+2}입니다`;
+            txt[i].style.fontSize = '25px';
+        }
+
+        txt.forEach( function(item){
+            item.innerHTML = '클래스입니다'
+            item.style.color = 'red';
+        });
+
+        let box = document.querySelector('.box')
+        let ul = document.querySelector('.box ul')
+        let li = document.querySelectorAll('.box ul li')
+
+        box.style.margin = '30px';
+        box.style.padding = '10px';
+        box.style.border = '2px solid #000';
+        box.style.width = '200px';
+
+        li.forEach(item => {
+            item.innerHTML = '리스트'
+            item.style.marginBottom = '10px'
+        })
+
+    </script> 
+    
+</body>
+</html>

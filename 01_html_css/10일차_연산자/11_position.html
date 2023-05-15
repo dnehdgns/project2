@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            border: 1px solid #000;
+            margin: 50px auto;
+            /* 기준 */
+            position: relative;
+        }
+        .box div{
+            width: 80px; height: 80px;
+            border: 1px solid #000;
+            font-size: 40px;
+            text-align: center;
+            line-height: 80px;
+
+            position: absolute;
+        }
+        .box div:nth-child(1) {
+            background: lime;
+            left: 0px;
+            top: 0px;
+        }
+        .box div:nth-child(2) {
+            background: pink;
+            left: 50px;
+            top: 50px;
+            z-index: 10;
+        }
+        .box div:nth-child(3) {
+            background: hotpink;
+            left: 100px;
+            top: 100px;
+        }
+        .box div:nth-child(4) {
+            background: yellow;
+            left: 150px;
+            top: 150px;
+        }
+        .box div:nth-child(5) {
+            background: skyblue;
+            left: 200px;
+            top: 200px;
+        }
+    </style>
+    <script>
+        'use strict'
+    </script>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut commodi sequi fugiat soluta culpa nobis possimus atque cumque, voluptates neque incidunt aperiam sed illum eaque deleniti libero, ipsum dolor et!
+    </p>
+
+    <pre>
+        부모를 
+        position : absolute 하는경우
+        팝업, 공지 (모달)
+
+        position : relative 하는경우
+        자기위치 자기 자신이 기준
+        left, top만 사용
+        자기자신(현재위치)
+        left:0, top:0이 기준
+
+        자식들이
+        position : absolute 일경우
+        반드시 높이를 써야한다
+    </pre>
+</body>
+</html>

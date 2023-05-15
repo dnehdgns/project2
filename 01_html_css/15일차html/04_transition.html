@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .box {
+            width: 600px;
+            margin: 30px, auto;
+            border: 1px solid #000;
+
+        }
+        .box div {
+            width: 80px;
+            font-size: 13px;
+            padding-right: 15px;
+            background: #dcdcdc;
+            color: #fff;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            text-align: right;
+        }
+        .box div:last-child {
+            margin-bottom: 0;
+        }
+
+        .box:hover div {
+            background: tomato;
+            width: 550px;
+        }
+
+        .box div:nth-child(1) { transition: all 1s ease; }
+        .box div:nth-child(2) { transition: all 1s ease-in; }
+        .box div:nth-child(3) { transition: all 1s ease-out; }
+        .box div:nth-child(4) { transition: all 1s ease-in-out; }
+        .box div:nth-child(5) { transition: all 1s linear; }
+        .box div:nth-child(6) { transition: all 1s cubic-bezier(.35,.57,.76,.69); }
+
+    </style>    
+    <script>
+        'ust strict'
+        
+    </script>
+</head>
+<body>
+   <div class="box">
+    <div>ease</div>
+    <div>ease-in</div>
+    <div>ease-out</div>
+    <div>ease-in-out</div>
+    <div>linear</div>
+    <div>cubic-bezier</div>
+   </div>
+
+   <pre>
+    움직이는대상, 효과를 넣어야하는 대상에 hover 할수는 있지만(10%),
+    대상의 부모 또는 상황에 따라 그의 부모에 호버하고 그안에 실제 대상이 움직이게(효과) 적용되게 만들기
+   </pre>
+</body>
+</html>

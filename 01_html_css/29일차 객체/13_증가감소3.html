@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        body { margin: 30px;}
+        .box { width: 300px; height: 60px; border: 1px solid #000; font-size: 30px; line-height: 2; text-align: center; margin-bottom: 10px;}
+        button { width: 148px; height: 45px;}
+    </style>   
+</head>
+<body>
+    <div class="box">aaa</div>
+    <p>
+        <button class="prev">중지</button>
+        <button class="next">시작</button>
+    </p>
+
+    <script>
+        'use strict';
+        let dom = document.querySelector('.box');
+        let prev = document.querySelector('.prev');
+        let next = document.querySelector('.next');
+        let count = 0, timerId = null, interval = 1000;
+        dom.textContent = count;
+
+        
+
+        timerId = setInterval( make, 1000);
+
+        function make(){
+            count++;
+            if(count>10) {count=0};
+            dom.innerHTML = count;
+        }
+
+        prev.addEventListener('click', function(){
+            clearInterval(timerId);
+            timerId = null;
+        })
+        next.addEventListener('click', function(){
+            if(!timerId){
+                timerId = setInterval( make, 1000);
+            }
+        })
+
+    </script> 
+    
+</body>
+</html>

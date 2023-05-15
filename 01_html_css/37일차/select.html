@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        body {
+            margin: 50px;
+        }
+        p { font-size: 20px; margin-top: 20px;}
+    </style>   
+</head>
+<body>
+   <select multiple>
+        <option>사과</option>
+        <option>배</option>
+        <option>수박</option>
+        <option>참외</option>
+        <option>토마토</option>
+   </select>
+   <p>선택 : xx</p>
+
+    <script>
+        'use strict';
+        let sel = document.querySelector('select')
+        let p = document.querySelector('p');
+        let txt = '';
+
+        // sel.addEventListener('change', e => {
+        //     txt = '선택 : ' + sel.value;
+        //     p.textContent = txt
+        // })
+
+        // sel.addEventListener('change', e => {
+        //     let current = e.currentTarget;
+        //     let options = current.options;
+        //     console.log(options);
+        //     let idx = options.selectedIndex;
+        //     p.textContent = '선택 : ' + options[idx].textContent
+        // })
+
+        sel.addEventListener('change', e => {
+            let current = e.currentTarget;
+            let options = current.options;
+            let arr = [];
+            for(let item of options) {
+                if(item.selected) {
+                    arr.push(item.textContent);
+                }
+            }
+            console.log(arr);
+            p.textContent = `선택 : ${arr.join(',')}`;
+        })
+    </script> 
+    
+</body>
+</html>

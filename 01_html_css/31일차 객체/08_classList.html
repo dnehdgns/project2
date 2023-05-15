@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        div { width: 200px; height: 50px; border: 1px solid #000; margin-bottom: 10px; }
+        strong { font-size: 30px; }
+        .on1 { background: pink; border-radius: 50px; height: 150px; border-width: 10px;}
+        .on2 { background: red; border-radius: 50%; height: 200px;width: 200px; border-width: 1px;}
+    </style>   
+</head>
+<body>
+    <div>aa</div>
+    <strong>aa</strong>
+    <p>
+        <button>add</button>
+        <button>remove</button>
+        <button>toggle</button>
+        <button>contains</button>
+        <button>replace</button>
+    </p>
+
+    <script>
+        'use strict';
+
+        let dom = document.querySelector('div')
+        let strong = document.querySelector('strong')
+        let btn = document.querySelectorAll('button');
+        let txt;
+
+        btn[0].addEventListener('click', e => {
+            dom.classList.add('on1', 'on2');
+            strong.textContent = dom.classList;
+        })
+        btn[1].addEventListener('click', e => {
+            dom.classList.remove('on1', 'on2');
+            strong.textContent = dom.classList;
+        })
+        btn[2].addEventListener('click', e => {
+            dom.classList.toggle('on1');
+            strong.textContent = dom.classList;
+        })
+        btn[3].addEventListener('click', e => {
+            txt =dom.classList.contains('on1');
+            // 존재여부
+            strong.textContent = dom.classList;
+        })
+        btn[4].addEventListener('click', e => {
+            dom.classList.replace('on1', 'on2');
+            strong.textContent = dom.classList;
+        })
+
+    </script> 
+    
+
+    <pre>
+        add('클래스명') : 추가,붙이기
+        remove('클래스명') : 제거
+        toggle('클래스명') : 두가지기능
+        contains('클래스명') : 존재하는지 확인 + if
+        replace('old class', ' new class') : 존재하는 클래스를 새로운 클래스로 교체
+    </pre>
+</body>
+</html>

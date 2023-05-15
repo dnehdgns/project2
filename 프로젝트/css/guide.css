@@ -1,0 +1,32 @@
+#wrap { width: 100%;}
+#header { height: 100px; background: red;}
+#footer { height: 400px; background: blue;}
+
+.guide .name-bar { width: 100%; height: 80px; background: #948dd4; padding-top: 20px;}
+.guide .name-bar h2 { color: #fff; font-size: 25px; margin-left: 50px; line-height: 60px;}
+
+.guide .inner { width: 1400px; margin: auto; display: flex;}
+
+.guide .inner .img-box {width: 1200px; height: 1000px; position: relative; margin-bottom: 200px;}
+
+.guide .inner .img-box .bg {}
+.guide .inner .img-box .bg img { display: block; transition: 0.3s; position: absolute; 
+    top: 10%; left: 7%; width: 1000px;}
+.guide .inner .img-box .btn-group button { position: absolute;
+    transition: 0.3s; font-size: 18px; border: none; background: #fff; border-radius: 10px;
+    border: 1px solid #999; cursor: pointer; transition: 0.2;
+}
+.guide .inner .img-box .btn-group button.oper { top: 330px; left: 355px; }
+.guide .inner .img-box .btn-group button.robot { top: 585px; left: 115px; }
+.guide .inner .img-box .btn-group button.MICU { top: 180px; left: 885px; }
+.guide .inner .img-box .btn-group button.SICU { top: 370px; left: 885px; }
+.guide .inner .img-box .btn-group button.CCU { top: 605px; left: 845px; }
+.guide .inner .img-box .btn-group button.heart { top: 788px; left: 855px; }
+.guide .inner .img-box .btn-group button.center { top: 788px; left: 380px; }
+.guide .inner .img-box .btn-group button.on { background: #969696; color: #fff; }
+.guide .inner .img-box .btn-group button.clicked { background: #948dd4; color: #fff; }
+
+.guide .inner .check-box { width: 150px; height: 500px; border: 1px solid #999; margin-top: 200px; border-radius: 10px;}
+.guide .inner .check-box span p { padding-bottom: 20px; text-align: center; cursor: pointer;}
+.guide .inner .check-box span p:first-child { padding-top: 10px;}
+.guide .inner .check-box span p.on { color: #948dd4; font-weight: 700; text-decoration: underline;}

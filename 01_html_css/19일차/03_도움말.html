@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .box {
+            width: 300px;
+            height: 200px;
+            background: lime;
+            border-radius: 15px;
+            margin: 50px auto;
+            color : #000;
+            line-height: 200px;
+            font-size: 18px;
+            text-align: center;
+            position: relative;
+        }
+        .box::after{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0; height: 0;
+            border-top: 25px solid lime;
+            border-right: 25px solid transparent;
+        }
+        .box1::after {
+            left: 45%; top: -11px;
+            transform: rotate(45deg);
+        }
+        .box2::after {
+            left : -11px; top: 45%;
+            transform: rotate(-45deg);
+        }
+        .box3::after {
+            left: 45%; bottom: -11px;
+            transform: rotate(-135deg);
+        }
+        .box4::after {
+            right: -11px; top: 45%;
+            transform: rotate(135deg);
+        }
+    </style>    
+</head>
+<body>
+    
+        <div class="box box1">내용1</div>
+        <div class="box box2">내용2</div>
+        <div class="box box3">내용3</div>
+        <div class="box box4">내용4</div>
+
+</body>
+</html>

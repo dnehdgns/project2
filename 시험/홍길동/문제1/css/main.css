@@ -1,0 +1,64 @@
+#wrap { width: 100%;}
+
+.menu { background-image: url(../images/main-bg1.png); height: 1000px;
+position: relative;}
+
+.menu dl { display: flex;}
+.menu dd { display: flex;}
+.menu img.left { position: absolute; left: 50px; top: 500px;}
+.menu img.right { position: absolute; right: 50px; top: 500px;}
+.menu ul dt { margin-left: 50px; margin-top: 20px; margin-right: 250px;}
+.menu ul li dl dd p { margin-top: 25px; color: #FFF; font-weight: 700; padding-left: 40px; padding-right: 40px; display: block; padding-top: 5px;}
+.menu ul p:nth-child(8) { padding-right: 150px;}
+.menu ul p:nth-child(10) { border: 2px solid #fff; border-radius: 25px; margin-top: 23px; margin-bottom: 5px;}
+
+.menu ul li dl dd p.icon {padding-left: 20px; padding-right : 20px; font-size: 13px; margin-left: 5px; margin-right: 5px;}
+
+.menu p { padding-top: 350px; color: #FFF; font-size: 17px;}
+.menu p.title { padding-bottom: 20px;}
+.menu h2 { font-size: 35px; color: #fff; font-weight: 700; line-height: 1.2;}
+
+.menu p, .menu h2{
+    padding-left: 400px;
+}
+
+.menu input{
+    margin-top: 30px;
+    margin-left: 400px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    width: 330px;
+    height: 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 11px;
+}
+
+.menu button {
+    margin-left: -90px;
+    background: #529C9B;
+    border: none;
+    padding : 10px 30px;
+    border-radius: 25px;
+}
+.menu button i {
+    color: #FFF;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+
+.box { margin: 50px auto; width: 1100px;}
+.box h2 { text-align: center; font-size: 35px; padding-bottom: 40px;}
+.box ul { display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; }
+.box ul li {width: 300px; margin-top: 60px;}
+.box ul li p strong { font-size: 20px; font-weight: 500; margin-bottom: 10px;}
+.box ul li dl {display: flex;align-items: center;}
+.box ul li dd{display: block;}
+.box ul li dt { display: block; width: 70px; height: 70px; }
+.box ul li p span { display: block; margin-top: 10px;}
+.box ul li img { vertical-align: middle;}
+.box ul li p {padding-left: 15px; display: block;}

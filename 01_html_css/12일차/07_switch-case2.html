@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+        'use strict'
+
+        // let num = Number(prompt('숫자입력',''));
+
+        // switch(num) {
+        //     case 1 : alert('운동화'); break;
+        //     case 2 : alert('우산'); break;
+        //     case 4 : alert('핸드백'); break;
+        //     case 7 : alert('신발'); break;
+        //     case 9 : alert('상품권'); break;
+        //     default : alert('다음기회에'); break;
+        // }
+
+        let dayNum = Number(prompt('0~6 입력',''));
+        let dayName;
+        let msg;
+
+        switch(dayNum) {
+            case 0 : dayName='일요일'; break;
+            case 1 : dayName='월요일'; break;
+            case 2 : dayName='화요일'; break;
+            case 3 : dayName='수요일'; break;
+            case 4 : dayName='목요일'; break;
+            case 5 : dayName='금요일'; break;
+            case 6 : dayName='토요일'; break;
+            default : alert('해당번호는 존재하지않습니다'); dayName = '요일없음'; break;
+        }
+        msg = '입력한' + dayNum + '번은' + dayName + '입니다';
+        document.write(msg);
+
+        // let position = prompt('직급을 입력해주세요');
+
+        // switch(position) {
+        //     case '사원' : alert('월급 : 200만원'); break;
+        //     case '주임' : alert('월급 : 250만원'); break;
+        //     case '대리' : alert('월급 : 300만원'); break;
+        //     case '과장' : alert('월급 : 350만원'); break;
+        //     case '부장' : alert('월급 : 400만원'); break;
+        //     default : alert('사원, 주임, 대리, 과장, 부장으로만 입력하세요'); break;
+        // }
+    </script>
+</head>
+<body>
+    <pre>
+        num
+        1 -1이다
+        3 -3이다
+        5 -5이다
+        그외 나머지
+        1,3,5가 아니다
+    </pre>
+</body>
+</html>

@@ -1,0 +1,6 @@
+div {background-color: aqua;}
+div h2 { font-size: 50px; background-color: hotpink;}
+div ul {}
+div ul li { background-color: aquamarine;}
+div +p { background-color: blueviolet;}
+p { background-color: cadetblue;}

@@ -1,0 +1,21 @@
+#wrap { width: 100%;}
+#header { height: 100px; background: red;}
+#footer { height: 400px; background: blue;}
+
+
+
+.intro .inner { width: 1400px; height: 800px; margin: auto;}
+.intro .inner h2 { text-align: center; margin-top: 100px; font-size: 25px; font-weight: 500;}
+.intro .inner h2 span { color: #948dd4;}
+.intro .inner h2+p { text-align: center; padding-bottom: 100px; font-size: 18px; color: #999;}
+.intro .inner ul { padding-bottom: 400px; position: relative;}
+.intro .inner ul li { display: block; width: 300px; height: 300px; position: absolute;
+	 margin-left: 50px; border: 1px solid #999; transition: 0.2s; border-radius: 5px;}
+.intro .inner ul li:nth-child(1) {}
+.intro .inner ul li:nth-child(2) { left: 350px;}
+.intro .inner ul li:nth-child(3) { left: 700px;}
+.intro .inner ul li:nth-child(4) { left: 1050px;}
+.intro .inner ul li.on { transform: scale(1.05); margin-left: 40px; border: 1.5px solid #000;}
+.intro .inner ul li img { width: 200px; height: 150px; display: block; margin: auto; padding-top: 20px;}
+.intro .inner ul li strong { display: block; text-align: center; margin-top: 15px; font-size: 20px; font-weight: 500;}
+.intro .inner ul li p { text-align: center; font-size: 16px; margin-top: 10px;}

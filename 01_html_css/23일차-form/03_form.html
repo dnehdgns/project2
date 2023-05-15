@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <style>
+        select {
+            width: 250px; height: 50px;
+            border: 1px solid #000;
+            appearance: none;
+            padding: 0 20px;
+        }
+        .box2 {
+            padding-bottom: 15px;
+        }
+
+        .box1 {
+            width: 250px; height: 50px;
+            margin: 30px;
+            position: relative;
+        }
+        .box1 button {
+            width: 30px; height: 30px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            position: absolute; right: 20px; top: 50%; transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .box1 button i {
+            font-size: 18px; line-height: 20px;
+        }
+        .box3 {
+            margin: 30px;
+            position: relative;
+        }
+
+        .box3::after {
+            content: "\e906";
+            font-family: xeicon;
+            font-size: 18px;
+            display: block;
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            border: 1px solid #000;
+            position: absolute;
+            right: 20px; top: 50px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <select name="" id="" class="">
+            <option value="">네이버</option>
+            <option value="">네이버</option>
+            <option value="">네이버</option>
+            <option value="">네이버</option>
+        </select>
+        <button>
+        <i class="xi-arrow-left"></i>
+        </button>
+    </div>
+
+    <div class="box2">
+        <select name="" id="" class="">
+            <option value="">네이버</option>
+            <option value="">네이버</option>
+            <option value="">네이버</option>
+            <option value="">네이버</option>
+        </select>
+    </div>
+
+    <div class="box3">
+        <select name="" id="" class="">
+            <option value="">네이버</option>
+            <option value="">네이버</option>
+            <option value="">네이버</option>
+            <option value="">네이버</option>
+        </select>
+    </div>
+
+    <pre>
+        ------------------
+
+    </pre>
+</body>
+</html>

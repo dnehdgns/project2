@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- link:css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        div {}
+        div h2 {}
+        div ul {}
+        div ul li {}
+
+        div + p { background-color: hotpink; font-size: 25px; color:red }
+
+        article {}
+        article dl {}
+        article dl dt { background-color: pink; }
+        /* article dl dt + dd { background-color: yellow;} */
+        article dl dt ~ dd{ background-color: pink; }
+        article dl dd {}
+
+        /* article + p { background-color: lime; font-size: 20px; color:blue } */
+        article ~ p { background-color: lime; font-size: 20px; color:blue }
+    </style>
+</head>
+<body>
+    <!-- div>h2{제목2}+ul>li{list$}*4 -->
+    <div>
+        <h2>제목2</h2>
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+        </ul>
+    </div>
+    <p>Lorem ipsum dolor sit.</p>
+    <!-- article>dl>(dt{용어$}+dd{설명$}*6) -->
+    <article>
+        <dl>
+            <dt>용어1</dt>
+            <dd>설명1</dd>
+            <dd>설명2</dd>
+            <dd>설명3</dd>
+            <dd>설명4</dd>
+            <dd>설명5</dd>
+            <dd>설명6</dd>
+        </dl>
+    </article>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, laudantium?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, laudantium?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, laudantium?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, laudantium?</p>
+
+    <pre>
+        ///////////////////////
+        형제 선택자 
+        + : 형제선택자 바로 아래 1개만 선택 
+            ( 많이 사용한다 )
+        형식)
+        경로 + 요소 {}
+        A B C + D {}
+        D는 경로를 작성하지 않는다 ( 대상요소만작성 )
+        
+        <A>
+            <B>
+                <C>제목</C>
+                <D>형제1</D>
+                <E>형제2</E>
+            </B>
+        </A>
+            
+
+        ~ : 하위 모든 형제요소
+        형식
+            경로 ~ 요소 {}
+            A B C ~ D {}
+
+    </pre>
+</body>
+</html>

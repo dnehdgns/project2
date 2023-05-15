@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+</head>
+<body>
+   <a href="https://www.naver.com" target="_blank" class="testClass" id="testId"></a>
+   <div>
+
+   </div>
+
+    <script>
+        'use strict';
+        let a = document.querySelector('a');
+        let dom = document.querySelector('div')
+        let txt = '';
+        txt += a.getAttribute('href') + '<br>';
+        txt += a.getAttribute('target') + '<br>';
+        txt += a.getAttribute('class') + '<br>';
+        txt += a.getAttribute('id') + '<br>';
+
+        dom.innerHTML = txt;
+
+    </script> 
+    
+</body>
+</html>

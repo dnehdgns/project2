@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        td {
+            width: 120px; height: 50px;
+            border: 1px solid #000;
+        }
+    </style>   
+</head>
+<body>
+   <table>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+   </table>
+
+    <script>
+        'use strict';
+        let table = document.querySelector('table tbody');
+        let t1 = table.firstElementChild.children[0];
+
+        t1.style.backgroundColor = 'lime'
+
+        let t2 = t1.nextElementSibling.nextElementSibling.style.backgroundColor = 'red'
+        let t3 = t1.parentElement.nextElementSibling.nextElementSibling.children[0].nextElementSibling;
+        t3.style.backgroundColor = 'blue';
+    </script> 
+    
+</body>
+</html>

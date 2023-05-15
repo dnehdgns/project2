@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+    <script>
+        // 'use strict';
+
+        // 즉시 실행함수
+        ;(function() {
+            'use strict';
+            alert('코드실행');
+        })()
+
+        
+    </script> 
+</head>
+<body>
+   
+    <pre>
+        'use strict';
+
+        // 선언적 함수
+        // make1();
+        function make1() {
+            alert('test1');
+        }
+        // make1();
+
+        // x1(); - 실행안됨
+        const x1 = function make2() {
+            alert('기명함수');
+        }
+        // x1();
+
+        // make3();
+        const make3 = function() {
+            alert('익명함수');
+        }
+        // make3();
+
+        // 즉시 실행함수
+        (function() {
+            alert('코드실행')
+        })
+    </pre>
+</body>
+</html>

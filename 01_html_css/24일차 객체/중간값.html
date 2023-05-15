@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+    <script>
+        'use strict';
+
+        let Gcode = prompt('주민번호 앞자리 6자리');
+        let birth = `${Gcode.substring(0,2)}년, ${Gcode.substring(2,4)}월 ${Gcode.substring(4,6)}일`;
+        let birth2 = `${Gcode.slice(2)}`;
+
+        document.write(birth);
+
+    </script> 
+</head>
+<body>
+   
+</body>
+</html>

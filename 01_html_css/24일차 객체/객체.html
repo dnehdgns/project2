@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+
+</head>
+<body>
+
+    <script>
+        'use strict';
+
+        let dog = {
+            name : '치와와',
+            age : 3,
+            color : 'pink',
+            addr : '인천',
+            food : '사료',
+            eat : function(){
+                document.write('강아지가 음식을먹는다')
+            },
+            sleep : function(){
+                document.write('강아지가 잔다')
+            },
+            run : function(){
+                document.write('강아지가 달린다')
+            }
+        }
+
+        for(let i in dog) {
+            document.write(`${i} : ${dog[i]} <br>`)
+        }
+        dog.run();
+    </script> 
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        body {
+            margin: 50px;
+        }
+        h2 {
+            font-size: 35px;
+        }
+        input {
+            width: 200px; height: 30px;
+        }
+        button {
+            padding: 8px 15px;
+        }
+        li {
+            margin-top: 20px;
+            font-size: 25px;
+            width: 250px;
+        }
+        li input {
+            width: 20px; height: 20px; margin-right: 10px;
+        }
+        li button {
+            margin-left: 10px;
+        }
+    </style>   
+</head>
+<body>
+    <h2>할일 만들기</h2>
+    <input type="text"> <button>추가</button>
+
+    <ul>
+        <!-- <li>
+            <input type="checkbox">
+            점심먹기
+            <button>삭제</button>
+        </li> -->
+    </ul>
+
+    <script>
+        'use strict';
+        let input_c = document.querySelector('input');
+        let btn_c = document.querySelector('button');
+        let ul = document.querySelector('ul');
+        let txt = '';
+
+        btn_c.addEventListener('click', item => {
+            let li = document.createElement('li');
+            let input = document.createElement('input');
+            let span = document.createElement('span')
+            let btn = document.createElement('button');
+            let liAll = document.querySelectorAll('li');
+
+            if(input_c.value.trim() == ''){
+                alert('내용입력');
+            } 
+
+            btn.textContent = '삭제'
+            span.textContent = input_c.value;
+            li.append(input, span ,btn)
+            ul.append(li);
+            input.setAttribute('type', 'checkbox');
+            input_c.value = '';
+            input_c.focus();
+
+            input.addEventListener('change', e => {
+                if(e.currentTarget.checked) {
+                    li.style.textDecoration = 'line-through'
+                    li.style.color = 'red';
+                } else {
+                    li.style.textDecoration = 'none'
+                    li.style.color = '#000';
+                }
+            })
+
+            btn.addEventListener('click', e => {
+                li.remove()
+            })
+        })
+    </script> 
+    
+</body>
+</html>

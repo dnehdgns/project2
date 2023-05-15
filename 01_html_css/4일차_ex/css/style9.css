@@ -1,0 +1,30 @@
+.con-box {
+    width: 900px;
+    margin: auto;
+    background-color: #efefef;
+    text-align: center;
+}
+.con-box h2 {
+    font-size: 25px;
+    padding-top: 50px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+.con-box h2 span{
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+}
+.con-box h2 .txt2 {
+    font-weight: 700;
+    border-bottom: 1px solid #000;
+}
+.con-box p {
+    padding-top: 30px;
+    font-size: 18px;
+}
+.con-box .img-txt {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: gray;
+}

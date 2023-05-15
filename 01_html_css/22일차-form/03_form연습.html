@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">   
+    <style>
+        .join { width: 800px; margin: 50px auto;}
+        .join table {}
+        .join table tr td { border: 1px solid #000; padding: 10px 15px; vertical-align: top;}
+        .join .w1{ width: 160px; background: pink;}
+        .join table td .w410 { width: 410px;}
+        .join table td .w120 { width: 120px;}
+        .join table td .w610 { width: 610px;}
+
+        .join table td input[type="text"] {height: 25px; border: 1px solid #000; box-sizing: border-box;}
+        .join table td select { height: 25px; border: 1px solid #000; box-sizing: border-box;}
+
+        .join p { text-align: center; margin-top: 40px; }
+        .join p input { width: 150px; height: 40px; border: 1px solid #000; margin-left: 20px; }
+    </style>
+      
+</head>
+<body>
+      <div class="join">
+        <form action="" method="get">
+            <table>
+                <colgroup>
+                    <col class="w1">
+                    <col class="w2">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="catName">고양이 이름 :</label>
+                        </td>
+                        <td>
+                            <input type="text" id="catName" title="고양이 이름 입력" class="w120" required placeholder="ex)나비">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="addr">주소 :</label>
+                        </td>
+                        <td>
+                            <select name="" id="addr" title="주소를 선택하세요">
+                                <option>서울</option>
+                                <option>인천</option>
+                                <option>경기</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gender">성별 :</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" id="gender1">
+                            <label for="gender1">남자</label>
+                            <input type="radio" name="gender" id="gender2">
+                            <label for="gender2">여자</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>좋아하는 것 :</td>
+                        <td>
+                            <input type="checkbox" id="chk1">
+                            <label for="chk1">생선</label>
+                            <input type="checkbox" id="chk1">
+                            <label for="chk1">고기</label>
+                            <input type="checkbox" id="chk1">
+                            <label for="chk1">우유</label>
+                            <input type="checkbox" id="chk1">
+                            <label for="chk1">바삭바삭한 것</label>
+                            <input type="checkbox" id="chk1">
+                            <label for="chk1">고양이 통조림</label>
+                            <input type="checkbox" id="chk1">
+                            <label for="chk1">단것</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="file">사진 :</label>
+                        </td>
+                        <td>
+                            <input type="file" name="파일선택" id="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="name">기르는 주인 이름 :</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" title="주인 이름 입력" class="w410">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mail">메일 주소 :</label>
+                        </td>
+                        <td>
+                            <input type="text" id="mail" title="메일 입력" class="w410">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="comm">코멘트 :</label>
+                        </td>
+                        <td>
+                            <textarea name="" id="comm" cols="50" rows="6" class="w610"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        <p><input type="submit" value="확인">
+        <input type="reset" value="초기화"></p>
+    </form> 
+      </div>
+    
+</body>
+</html>

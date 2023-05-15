@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .box1 {
+            width: 500px;
+            height: 500px;
+            position: relative;
+            margin: 50px auto;
+        }
+
+        .box1 img {
+            position: absolute;
+            left: 0; top: 0;
+        }
+
+        .box1 img:nth-child(1) {}
+        .box1:hover img:nth-child(1) {
+            animation: ani1 1s ease-in-out;
+            opacity: 0;
+        }
+        .box1 img:nth-child(2) {
+            left: -20px; top: -27px;
+            opacity: 0;
+        }
+        .box1:hover img:nth-child(2) {
+            animation: ani2 2s ease;
+            opacity: 1;
+        }
+
+        @keyframes ani2 {
+            0%{ opacity: 0;}
+            20%{ opacity: 0.3;}
+            100%{opacity: 1;}
+            
+        }
+
+    </style>    
+</head>
+<body>
+    <div class="box box1">
+        <img src="f1.png" alt="">
+        <img src="f2.png" alt="">
+    </div>
+</body>
+</html>

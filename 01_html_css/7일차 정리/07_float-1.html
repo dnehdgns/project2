@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .box {
+            padding: 10px;
+            border: 2px solid red;
+            margin: 30px;                       
+        }       
+        .box div {
+            width: 100px;
+            height: 100px;
+        }
+        .box div:nth-child(1){
+            background: pink;
+            float:left
+        }
+        .box div:nth-child(2){
+            background: red;
+            float: left;
+        }
+        .box div:nth-child(3){
+            background: green;
+            float:left;
+        }
+        
+        p {
+              background: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+     <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>        
+     </div>  
+
+     <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut nesciunt alias voluptatibus labore earum, ducimus esse ipsa ipsam est fugiat iste cum, libero repellendus placeat autem voluptates aliquid neque quos?
+     </p>
+
+    <pre>
+        ------------------
+        박스 옆으로 나열         
+        1. display:inline-block 
+        2. float : 15% 정도 
+           띄워서 나열 
+           옆에 대상도 옆으로 따라서 나열된다 
+
+           left는 띄워서 왼쪽부터 나열 (*)
+           right는 띄워서 오른쪽부터 나열
+           none는 적용안됨
+
+           해제 
+           left : 왼쪽 해제 / right : 오른쪽 해제    
+           both : 둘다해제(*)
+
+        float 알아야하는이유 
+        1. 유지보수 
+        2. flex 안될때 해결    
+    </pre>
+</body>
+</html>

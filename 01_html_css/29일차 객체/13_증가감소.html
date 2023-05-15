@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        body { margin: 30px;}
+        .box { width: 300px; height: 60px; border: 1px solid #000; font-size: 30px; line-height: 2; text-align: center; margin-bottom: 10px;}
+        button { width: 148px; height: 45px;}
+    </style>   
+</head>
+<body>
+    <div class="box">aaa</div>
+    <p>
+        <button class="prev">이전</button>
+        <button class="next">다음</button>
+    </p>
+
+    <script>
+        'use strict';
+        let dom = document.querySelector('.box');
+        let prev = document.querySelector('.prev');
+        let next = document.querySelector('.next');
+        let count = 0;
+        dom.textContent = count;
+
+        function minus() {
+            count -= 1;
+            if(count < 0) { count = 5}
+            dom.innerHTML = count;
+        }
+        function plus() {
+            count += 1;
+            if(count >10) {count = 0}
+            dom.innerHTML = count;
+        }
+        prev.addEventListener('click', minus);
+        next.addEventListener('click', plus);
+    </script> 
+    
+</body>
+</html>

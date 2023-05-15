@@ -1,0 +1,122 @@
+#wrap { width: 100%; }
+
+.join {
+    width: 1000px; 
+    margin: 50px auto;
+    position: relative;
+}
+.join b { color: red; }
+
+.join .w500 { width: 450px; }
+.join .w350 { width: 350px; }
+.join .w250 { width: 220px; }
+.join .w150 { width: 150px; }
+.join .w100 { width: 100px; }
+.join .w80 { width: 80px; }
+
+.join .w1 {width: 150px; }
+.join h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    padding-bottom: 100px;
+}
+
+.join ul { display: flex; }
+
+.join ul li {
+    display: block;
+    width: 333px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #999;
+    color: #fff;
+}
+
+.join ul li.on { background: red; }
+
+.join h3 {
+    margin-top: 100px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.join h3+p {
+    position: absolute;
+    left: 120px;
+    top: 290px;
+}
+
+.join table {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    width: 100%;
+    margin-bottom: 100px;
+    border-spacing: 0;
+}
+
+.join tr td {
+    border-bottom: 1px solid #999;
+    padding-left: 15px;
+    padding: 10px;
+}
+
+.join tr:last-child td { border: none; }
+
+
+.join tr td:first-child {
+    background: #EAEAEA;
+    vertical-align: middle;
+}
+
+
+.join input[type=text], .join select {
+    height: 35px;
+    padding : 0 15px;
+}
+
+.join input[type=text]:not(:first-child) {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.join input[type=text]:first-child {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#test{
+    margin-left: 0px;
+}
+
+.join .checkId, .join .checkAddr {
+    width: 150px;
+    padding: 10px;
+    background: #666666;
+    color: #fff;
+    border: none;
+    margin-left: 20px;
+}
+
+.join em {
+    color: #999;
+    font-size: 12px;
+}
+
+
+.join form+span{ margin-left: 320px; }
+
+.join span .prev ,.join span button.next {
+    width: 150px;
+    height: 40px;
+} 
+.join span .prev {
+    background: #fff;
+    border: 1px solid #000;
+}
+.join span .next {
+    margin-left: 30px;
+    background: #e6003E;
+    border: none;
+    color: #fff;
+}

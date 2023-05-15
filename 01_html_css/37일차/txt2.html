@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        body {margin: 30px;}
+        ul { margin-top: 10px; }
+        ul li { 
+            width: 250px; line-height: 40px; border: 1px solid #000;
+            text-indent: 10px; margin-bottom: 5px;
+        }
+
+    </style>   
+</head>
+<body>
+    <input type="text" class="txt">
+    <button>추가</button>
+    <button>출력</button>
+
+    <p>aaa</p>
+
+    <ul>
+        <!-- <li>aaa</li> -->
+    </ul>
+    <script>
+        'use strict';
+        let text = document.querySelector('input');
+        let btn = document.querySelectorAll('button');
+        let ul = document.querySelector('ul')
+        let rLi = document.querySelector('li');
+        let p = document.querySelector('p')
+        let txt = '';
+        let arr = [], arr1 = [];
+
+        text.addEventListener('keyup', e => {
+            txt = text.value;
+        })
+
+        btn[0].addEventListener('click', e => {
+            let li = document.createElement('li');
+            li.textContent = txt;
+            arr.push(txt);
+            arr1 = arr.concat();
+            ul.append(li);
+            text.value = '';
+            text.focus();
+
+            li.addEventListener('click', e =>{
+                e.currentTarget.remove();
+                console.log(num);
+                arr1 = arr1.filter(x => x!== arr1[num]);
+                p.textContent = arr1;
+            })
+        })
+
+        btn[1].addEventListener('click', e => {
+            p.textContent = arr;
+        })
+
+    </script> 
+    
+</body>
+</html>

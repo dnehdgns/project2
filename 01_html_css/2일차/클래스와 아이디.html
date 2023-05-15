@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .box1 {background-color: yellow; color: red;}
+        .box2 {background-color: pink; color: blue; font-size: 25px;}
+        #id1 { background-color: hotpink;}
+        #id2 { background-color: bisque;}
+        #id3 { background-color: blueviolet;}
+    </style>
+</head>
+<body>
+    <h1 class="box1">제목1</h1>
+    <h2 class="box2">제목2</h2>
+    <h3 id="id1">제목3</h3>
+    <p class="box1">테스트입니다</p>
+    <dl>
+        <dt id="id2">용어</dt>
+        <dd id="id3">설명설명</dd>
+    </dl>
+    <pre>
+        /////////////////////////////////////
+        선택자 {속성:값; 속성:값; ~~ }
+        선택바 {속성:값; 속성:값; ~~}
+        맨끝의 속성은 ; 생략가능
+        태그,아이디,클래스등
+
+        color : 글자색
+        background-color : 배경색
+        font-size: xxpx : 글자크기
+        width : 너비px
+        height : 높이px
+
+        우선순위
+        *: 모든 0점
+        태그 : 1점
+        #아이디 : 100점
+        .클래스 : 10점
+        :가상선택자 : 10점
+
+        #wrap : 100점
+        #wrap #header : 200점
+        .gnb li : 11점
+        .gnb li a : 12점
+        ul li a : 3점
+        a:hover : 11점 
+        
+    </pre>
+</body>
+</html>

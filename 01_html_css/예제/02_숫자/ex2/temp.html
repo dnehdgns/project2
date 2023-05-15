@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        button {    padding:20px    }
+        .con-box .img { width: 600px; height: 400px; cursor: pointer;  margin-bottom: 20px;}
+        .con-box .txt {
+            width: 600px; height: 40px; font-size: 20px; line-height: 2; padding:0 15px; border: 1px  solid #000; box-sizing: border-box; margin-bottom: 20px;
+        }  
+    </style>   
+</head>
+<body>
+    <div class="con-box">
+        <div class="img">
+          <img src="images/cat0.jpg" alt="" >
+        </div> 
+        <div class="txt">????</div>
+        <p>
+          <button class="prev">이전</button>
+          <button class="next">다음</button>
+        </p> 
+    </div>
+
+    <script>
+        'use strict';
+
+        let arr = ['고양', '야옹', '고양고양', '야옹야옹'];
+        let arrURL = [];
+
+        arrURL[0] = 'https://www.naver.com';
+        arrURL[1] = 'https://www.daum.net';
+        arrURL[2] = 'https://www.nate.com';
+        arrURL[3] = 'https://www.google.com';
+
+        let pic = document.querySelector('.con-box img');
+        let next = document.querySelector('.con-box .next');
+        let prev = document.querySelector('.con-box .prev');
+        let txt = document.querySelector('.con-box .txt');
+        let box = document.querySelector('.con-box .img');
+
+        let count =0, size=arr.length, timer=null, interval = 3000;
+        let className;
+
+        banner();
+
+        timer = setInterval(make, interval); 
+
+        function make() {
+            count++;
+            count = count % size;
+            banner();
+        }
+        const gallery = (btnName) => {
+            if(btnName == 'prev'){
+                count--;
+                if(count < 0) count = 3;
+            }else{
+                count++;
+                if(count > 3) count = 0;
+            }
+            banner()
+        }
+
+        function banner() {
+            pic.setAttribute('src', `images/cat${count}.jpg`);
+            pic.animate([
+                {opacity:0},
+                {opacity:1}
+            ],400)
+            txt.innerHTML = arr[count];
+        }
+
+        prev.addEventListener('click', e => {
+            className = e.currentTarget.getAttribute('class');
+            gallery(className);
+        })
+        next.addEventListener('click', e => {
+            className = e.currentTarget.getAttribute('class');
+            gallery(className);
+        })
+
+        pic.addEventListener('mouseenter', () => {
+            clearInterval(timer);
+            timer = null;
+        })
+
+        pic.addEventListener('mouseleave', () => {
+            if(timer == null) {
+                timer = setInterval(make, interval);
+            }
+        })
+
+        pic.addEventListener('click', e => {
+            window.open(arrURL[count]);
+        })
+
+
+
+
+    </script> 
+    
+</body>
+</html>

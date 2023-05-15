@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .box {
+            width: 200px; height: 100px;
+            margin: 30px;
+            border: 1px solid #000;
+            line-height: 100px;
+            text-align: center;
+            font-size: 35px;
+        }
+        select {
+            margin-left: 30px;
+        }
+    </style>   
+</head>
+<body>
+    <div class="box">
+        aaa
+    </div>
+    <select name="" id="">
+        <option value="">색선택</option>
+        <option value="red">빨강</option>
+        <option value="orange">주황</option>
+        <option value="yellow">노랑</option>
+        <option value="green">초록</option>
+        <option value="blue">파랑</option>
+        <option value="violet">보라</option>
+    </select>
+    <script>
+        'use strict';
+        let sel = document.querySelector('select');
+        let dom = document.querySelector('.box')
+
+
+        sel.addEventListener('change', e => {
+            let txt = e.currentTarget.value;
+
+            dom.style.backgroundColor = txt;
+            dom.textContent = txt;
+        })
+    </script> 
+    
+</body>
+</html>

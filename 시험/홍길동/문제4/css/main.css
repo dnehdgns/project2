@@ -1,0 +1,53 @@
+#wrap { width: 100%;}
+.inner { margin: auto; width: 1400px; position: relative;}
+.health {
+    border: 2px solid #4D9C96;
+    width: 950px; height: 500px;
+    margin: auto;
+}
+
+.inner h2 {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 130px;
+    font-size: 30px;
+}
+
+.inner img { position: absolute; left: 700px; top: 240px; }
+
+.inner button {
+    position: absolute;
+    background: #fff;
+    border: none;
+}
+
+.inner i { font-size: 50px; }
+.inner .prev { top: 420px; }
+.inner .next { top: 420px; right: 20px; }
+
+.health { z-index: 10; position: absolute; left: 160px; }
+.health ul { padding-top: 50px; padding-left: 30px; }
+.health h3 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 50px;
+    color: #4D9C96;
+}
+.health span {
+    display: block;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.health p {
+    display: block;
+    width: 400px;
+    font-size: 13px;
+    padding-bottom: 130px;
+}
+.health button {
+    padding : 15px 30px;
+    background: #fff;
+    border: 2px solid #4D9C96;
+    color: #4D9C96;
+    border-radius: 25px;
+}

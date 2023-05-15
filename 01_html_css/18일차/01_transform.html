@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .box { width: 400px; margin: 30px auto;}
+        .box img { width: 400px; height: 250px;}
+        .box1 { height: 250px; overflow: hidden;}
+        .box1 img { transition: 1s;}
+        .box1:hover img { transform: scale(1.5);}
+
+        .box2 { border: 1px solid #000; }
+        .box p {overflow: hidden;}
+        .box2 img { transition: 1s;}
+        .box2:hover img { transform: scale(1.2); }
+        .box2 strong { display: block; margin-top: 40px; font-size: 20px;}
+
+        .box3 {height: 250px; position: relative; display: block; border: 1px solid #000; overflow: hidden;}
+        .box3 strong {
+            display: block;
+            width: 100%; 
+            line-height: 80px; 
+            background: rgba(0,0,0,0.5);
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+            color: #FFF;
+            position: absolute;
+            left: 0;
+            bottom: -80px;
+            transition: 1s;
+        }
+        .box3:hover strong {
+            bottom: 0px;
+        }
+
+        .box4 { height: 250px; position: relative; border: 1px solid #000; }
+        .box4 strong {
+            display: block;
+            width: 400px;
+            height: 80px;
+            line-height: 80px;
+            background: rgba(0,0,0,0.5);
+            text-indent: 20px;
+            font-size: 20px;
+            font-weight: 500;
+            color: #FFF;
+            position: absolute;
+        }
+        .box4:hover strong {
+            width: 250px;
+            transform: rotate(-90deg);
+            left: -160px;
+            top: 85px;
+        }
+
+        .box5 { 
+            margin-top: 100px; 
+            height: 250px; 
+            position: relative; 
+            border: 1px solid #000;
+        }
+
+        .box5 a img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: 1s;
+        }
+
+        .box5:hover a img:last-child {
+            opacity: 0;
+        }
+        
+        .box5 p {
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            transition: 1s;
+        }
+        .box5:hover p {
+            opacity: 1;
+        } 
+
+        .box5 p button {
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            border: none;
+            cursor: pointer;
+        }
+        .box5 p button:first-child{
+            margin-right: 15px;
+        }
+
+    </style>    
+</head>
+<body>
+   <div class="box box1">
+    <img src="images/cat0.jpg" alt="">
+    </div>
+
+    <div class="box box2">
+        <p><img src="images/cat1.jpg" alt=""></p>
+        <strong>고양이</strong>
+    </div>
+
+    <div class="box box3">
+        <img src="images/cat2.jpg" alt="">
+        <strong>고양이</strong>
+    </div>
+
+    <div class="box box4">
+        <img src="images/cat3.jpg" alt="">
+        <strong>고양이</strong>
+    </div>
+
+    <div class="box box5">
+        <a href="">
+            <img class="cat1" src="images/cat0.jpg" alt="">
+            <img class="cat2" src="images/cat1.jpg" alt="">
+            <img class="cat3" src="images/cat2.jpg" alt="">
+            <img class="cat4" src="images/cat3.jpg" alt="">
+        </a>
+        <p>
+            <button><i class="xi-cart-o"></i></button>
+            <button><i class="xi-heart-o"></i></button>
+        </p>
+    </div>
+</body>
+</html>

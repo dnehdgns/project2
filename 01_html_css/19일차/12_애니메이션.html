@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .box {
+            width: 500px; height: 500px;
+            position: absolute;
+            left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box span {
+            display: block;
+            width: 500px; height: 500px;
+            position: absolute;
+            left: 0; top: 0;
+        }
+
+        .box span:nth-child(1) {
+            border: 1px solid red;
+            border-radius: 64% 36% 66% 34% / 33% 57% 43% 67%;
+            animation: ani1 5s linear infinite;
+        }
+        .box span:nth-child(2) {
+            border: 1px solid pink;
+            border-radius: 18% 82% 48% 52% / 54% 47% 53% 46%;
+            animation: ani2 7s linear infinite;
+        }
+        .box span:nth-child(3) {
+            border: 1px solid hotpink;
+            border-radius: 34% 66% 72% 28% / 34% 74% 26% 66%;
+            animation: ani3 9s linear infinite;
+        }
+        .box span:nth-child(4) {
+            border: 1px solid purple;
+            border-radius: 34% 66% 72% 28% / 34% 74% 26% 66%;
+            animation: ani4 11s linear infinite;
+        }
+        .box span:nth-child(5) {
+            border: 1px solid violet;
+            border-radius: 77% 23% 17% 83% / 33% 59% 41% 67%;
+            animation: ani5 13s linear infinite;
+        }
+
+        @keyframes ani1 {
+            0% { transform: rotate(0deg);}
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes ani2 {
+            0% { transform: rotate(0deg);}
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes ani3 {
+            0% { transform: rotate(0deg);}
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes ani4 {
+            0% { transform: rotate(0deg);}
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes ani5 {
+            0% { transform: rotate(0deg);}
+            100% { transform: rotate(360deg); }
+        }
+    </style>    
+</head>
+<body>
+   <div class="box">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</html>

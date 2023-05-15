@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .box {
+            width: 200px; margin: 30px;
+        }
+        .box ul {}
+        .box ul li { line-height: 40px; border: 1px solid #000; margin-bottom: 5px; text-indent: 10px;}
+        p { margin-bottom: 5px; }
+    </style>   
+</head>
+<body>
+    <div class="box">      
+        <ul class="list">
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>hi</li>
+        </ul>
+        <!-- 주석처리 -->
+        <p class="txt1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        </p>
+        <p class="txt1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        </p>
+  
+    </div>
+
+    <script>
+        'use strict';
+        let list = document.querySelector('.list');
+        let li = document.querySelectorAll('.list li');
+        let p = document.querySelector('p');
+
+        let a1 = list.firstElementChild;
+        // console.log(a1);
+
+        a1.textContent = '처음자식 요소'
+        a1.style.backgroundColor = 'red';
+
+        let a2 = list.lastElementChild;
+        // console.log(a2);
+
+        a2.textContent = '마지막자식 요소'
+        a2.style.backgroundColor = 'blue';
+
+        let a3 = list.parentElement;
+        let a4 = list.children;
+        console.log(a4)
+
+        let a5 = list.children[2];
+        a5.textContent = '자식2'
+
+        let a6 = li[2].nextElementSibling;
+        a6.textContent = '형제 다음'
+        a6.nextElementSibling.nextElementSibling.style.backgroundColor = 'lime';
+
+        let a7 = li[2].previousElementSibling;
+        a7.textContent = '형제 이전'
+        a6.previousElementSibling.previousElementSibling.style.backgroundColor = 'pink';
+
+
+
+    </script> 
+    <pre>
+        childNodes : 자식노드들 (유사배열)
+        firstElementchild : 기준노드의 첫번쨰 자식
+        lastElementchild : 기준노드의 마지막 자식
+        nextElementSibling : 다음 형제노드
+        preElementSibling : 이전 형제노드
+        parentElement : 부모요소
+    </pre>
+</body>
+</html>

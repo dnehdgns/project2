@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .con-box {
+            width: 700px;
+            height: 600px;
+            margin:20px auto;
+            padding: 10px;
+            border: 1px solid #000;            
+            display:flex;           
+            flex-wrap:wrap;
+            /* 한줄이상일때  */
+            /* align-content:flex-start ; */
+            /* align-content:flex-end */
+            /* align-content:center; */
+            /* align-content:space-between; */
+            /* align-content:space-around */
+            align-content:space-evenly
+        }
+        .con-box .box {
+            width: 100px;
+            height: 100px;
+            text-align: center; 
+            line-height: 100px;
+            font-size: 30px;
+        }
+        .con-box .box1 {background: #4DB6AC;}
+        .con-box .box2 {background: #00ACC1;}
+        .con-box .box3 {background: #388E3C;}
+        .con-box .box4 {background: #CDDC39;}
+    </style>
+</head>
+<body>
+    <!-- div.con-box>div.box.box$*4  -->
+    <div class="con-box">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+    </div> 
+    <pre>
+        ------------------
+        flex : 열으로 나열 
+        주축 /교차축 
+        부모에 ( container ) : display:flext         
+         자식 : item 들이 옆으로 나열
+                높이값이 없으면 
+                기본값 : stretch
+        
+        * 주축 변경 
+        flex-direction :row , column       
+    </pre>
+</body>
+</html>

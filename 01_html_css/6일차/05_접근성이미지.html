@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .logo2 a {
+            display: block;
+            width: 120px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-image: url(images/logo.JPG);
+            border: 1px solid #000;
+
+            /* 글자처리 */
+            text-indent:-9999em;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+     <!-- 로고 -->
+     <!-- h1>a[href="#"]>img -->
+     <h1 class="logo1">
+        <a href="#">
+            <img src="images/logo.JPG" alt="카카오">            
+        </a>
+     </h1>
+
+    <!-- 반응형작업할때 주로 사용 -->
+    <h1 class="logo2">
+        <a href="#">
+            <!--
+                스크린리더 읽어주는 글자
+             -->
+             카카오 
+        </a>
+    </h1>
+    <pre>
+        ------------------
+        접근성이미지 
+
+    </pre>
+</body>
+</html>

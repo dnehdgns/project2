@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        body { display: flex; margin: 100px; }
+        div.goods { border: 1px solid #000; width: 1000px; height: 600px; }
+        .goods ul { display: flex; flex-wrap: wrap;}
+        li { width: 300px; margin: 10px; }
+        p { margin-left: 75px;  }
+        button { margin-top: 15px; padding : 3px 6px }
+        button.in { margin-left: 70px; }
+        button.del { margin-left: 20px; }
+        button.in1 { margin-left: 140px; }
+        button.del1 { margin-left: 20px; }
+        img { width: 200px; padding: 20px; pointer-events: none;}
+        div.bag { width: 420px; height: 700px; margin-left: 50px; box-sizing: border-box; }
+        .bag button { margin-top: 20px; padding: 5px 10px; }
+        .bag button.empty { margin-left: 60px;}
+        .bag button.return { margin-left: 20px;}
+    </style>   
+</head>
+<body>
+    <div class="goods">
+        <ul>
+            <li>
+                <img src="images/cat0.jpg" alt="">
+                <p>이름 : 고양이1</p>
+                <button class="in">담기</button>
+                <button class="del">삭제</button>
+            </li>
+            <li>
+                <img src="images/cat1.jpg" alt="">
+                <p>이름 : 고양이2</p>
+                <button class="in">담기</button>
+                <button class="del">삭제</button>
+            </li>
+            <li>
+                <img src="images/cat2.jpg" alt="">
+                <p>이름 : 고양이3</p>
+                <button class="in">담기</button>
+                <button class="del">삭제</button>
+            </li>
+            <li>
+                <img src="images/cat3.jpg" alt="">
+                <p>이름 : 고양이4</p>
+                <button class="in">담기</button>
+                <button class="del">삭제</button>
+            </li>
+            <li>
+                <img src="images/cat4.jpg" alt="">
+                <p>이름 : 고양이5</p>
+                <button class="in">담기</button>
+                <button class="del">삭제</button>
+            </li>
+            <li>
+                <img src="images/cat5.jpg" alt="">
+                <p>이름 : 고양이6</p>
+                <button class="in">담기</button>
+                <button class="del">삭제</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bag">
+        <ul>
+            <button class="empty">비우기</button>
+            <button class="return">원래상태</button>
+
+        </ul>
+    </div>
+
+    <script src="js/ex.js"></script> 
+    
+</body>
+</html>

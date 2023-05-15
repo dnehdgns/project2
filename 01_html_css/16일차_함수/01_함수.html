@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+    <script>
+        'use strict';
+
+        // function make1(){
+        //     alert('아메리카노');
+        // }     
+
+        // function make2(){
+        //     alert('카페라떼');
+        // }
+
+        // function make3(){
+        //     alert('카페모카');
+        // }
+
+        // function make4(){
+        //     alert('카라멜마끼아또');
+        // }
+
+        function make(menu) {
+            alert(`${menu}`);
+        }
+
+    </script> 
+</head>
+<body>
+   <h2>커피주문</h2>
+   <p>
+        <input type="button" value="아메리카노" onclick="make(this.value)">
+        <input type="button" value="카페라떼" onclick="make(this.value)">
+        <input type="button" value="카페모카" onclick="make(this.value)">
+        <input type="button" value="카라멜마끼아또" onclick="make(this.value)">
+   </p>
+</body>
+</html>

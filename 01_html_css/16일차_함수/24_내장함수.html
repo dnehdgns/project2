@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+    <script>
+        'use strict';
+
+        // setTimeout( function(){
+        //     // alert('오직 한번 실행')
+        //     window.open('https://www.naver.com');
+        // }, 3000)
+
+        // setInterval( function(){
+        //     alert('주기적 실행')
+        // }, 2000)
+
+        const make = () => {
+            document.write('출력');
+        } 
+
+        setInterval(make , 1000);
+
+    </script> 
+</head>
+<body>
+   
+    <pre>
+        setTimeout(함수, 시간차) : 오직 한번만 실행
+        setInterval(함수, 시간차) : 매시간마다 계속
+
+        내장함수( function(){ -> 콜백함수
+            실행문
+        }, 시간차)
+
+        내장함수( 함수명, 시간차)
+        function 함수명(){
+            실행문
+        }
+
+        const 함수명 = () => {
+            실행문
+        }
+
+        내장함수( 함수명, 시간차);
+    </pre>
+</body>
+</html>

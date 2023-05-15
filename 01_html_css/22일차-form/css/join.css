@@ -1,0 +1,44 @@
+#wrap { width: 100%; min-width: 1600px;}
+.inner { width: 990px; margin: auto; position: relative; box-sizing: border-box;}
+#header {width: 100%; background: #D1C4E9;}
+#header .inner {height: 150px; background: #B39DDB;}
+
+.join {position: relative;}
+.join .inner b {color: red; vertical-align: middle;margin-left: 10px; margin-right: 10px;}
+.join .inner { padding: 100px 0;}
+.join .inner form { border-top: 2px solid #000; }
+.join .inner form fieldset { padding-top: 10px;}
+.join h2 { font-size: 25px; font-weight: 500; padding-bottom: 20px;}
+.join h2 + p { position: absolute; right: 0; top: 70px;}
+
+.join table {}
+.join table .w1 {}
+.join table .w2 {}
+.join table .w120 { width: 120px;}
+.join table .w180 { width: 180px;}
+.join table input[type=button] { margin-left: 5px;}
+.join table input[type=text] { margin-right: 5px;}
+
+.join table tr {}
+.join table tr td:first-child{ width: 180px; vertical-align: middle;}
+.join table tr:nth-child(7) td input[type=text]:not(:first-child) { margin-left: 5px;}
+.join table tr:nth-child(4) td span, .join table tr:nth-child(5) td span {margin-left: 10px;}
+.join table tr td { padding: 5px 0;}
+.join table tr td input[type=text] {height: 25px; border: 1px solid #000; box-sizing: border-box;}
+.join table tbody tr:nth-child(3), .join table tbody tr:nth-child(9) { border-bottom: 1px solid #dcdcdc; padding-bottom: 10px;}
+.join table tbody tr:nth-child(10) td li:not(:first-child) {padding-top: 10px;}
+.join table tbody tr:nth-child(10) td, .join table tbody tr:nth-child(11) td,  .join table tbody tr:nth-child(12) td {padding: 10px 0; border-bottom: 1px solid #dcdcdc; }
+.join table tbody tr:nth-child(3) td, .join table tbody tr:nth-child(9) td {padding-bottom: 10px;}
+.join table tbody tr:nth-child(4) td, .join table tbody tr:nth-child(9) td {padding-top: 10px;}
+.join table tbody tr:nth-child(11) td { vertical-align: middle;}
+
+.join table tr td ul li input[type=text]:last-child { width: 600px; margin-top: 10px;}
+.join table tr td ul li input[type=checkbox]:last-of-type { margin-left: 150px;}
+.join table tr td input[type=checkbox]{ margin-left: 0px;}
+
+.join p { text-align: center; margin-top: 65px;}
+.join p input[type=submit] {background:  #000; color: #fff; width: 120px; height: 80px; margin-left: -5px;}
+.join p input[type=reset] { width: 120px; height: 80px;}
+
+#footer {width: 100%; background: #BBDEFB;}
+#footer .inner {height: 250px; background: #42A5F5;}

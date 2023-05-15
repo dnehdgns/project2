@@ -1,0 +1,38 @@
+.wrap {
+    padding:20px;
+    display: flex;
+}
+
+.left{
+    width: 500px; height: 800px;
+}
+
+.left p {
+    font-size: 25px; font-weight: 500; margin-top: 30px;
+}
+
+.right{
+    display: block;
+    width: 200px;
+    margin-left: 20px;
+}
+.right ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.right ul li {
+    padding: 5px; background: #fff;
+}
+
+.right ul li.on {
+    background: orange;
+}
+
+.right p {
+    margin-top: 30px; font-size: 18px;
+}
+
+.right img {
+    width: 40px; height: 40px;
+}

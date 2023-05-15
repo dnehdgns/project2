@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        body { margin: 30px;}
+        h1 { font-size: 40px;}
+    </style>   
+</head>
+<body>
+    <input type="text" value="값">
+    <h1>aaa</h1>
+
+    <script>
+        'use strict';
+        let h1 = document.querySelector('h1')
+        let input = document.querySelector('input');
+        let txt = '';
+
+        txt = input.value;
+        h1.textContent = txt;
+
+        input.addEventListener('change', e => {
+            txt = input.value;
+            h1.textContent = txt;
+        })
+        // input, keydown, keyup 반응동일
+    </script> 
+    <pre>
+        이벤트
+        keydown, keyup
+        input : 값이 바뀔때
+        change : 변경했을떄
+        focus : 초점을 선택했을때
+        blur : 밖으로 벗어났을떄
+    </pre>
+</body>
+</html>

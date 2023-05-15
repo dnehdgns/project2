@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .box {
+            margin: 50px;
+            position: relative; 
+            width: 800px; 
+        }
+        .box input[type=checkbox] {
+            position: absolute;
+            left:-99999px; 
+            top:0; 
+        }
+        .box label {
+            margin-right: 50px; 
+            position: relative; 
+        }
+        .box label::before {
+            content:"";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            margin-right: 5px;
+            vertical-align: middle;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        .box input[type=checkbox]:checked +label::before {
+            content:"\2713"; 
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-color:tomato;
+            color:pink;
+            text-align: center; 
+            line-height: 20px;
+            background: tomato;
+        }
+    </style>
+</head>
+<body>
+    
+    <p class="box">
+        <input type="checkbox" name="chk1" id="" >
+        <label for="">사과</label>
+
+
+        <input type="checkbox" name="chk2" id="">
+        <label for="">라면</label>
+
+        <input type="checkbox" name="chk3" id="chk3">
+        <label for="chk3">우동</label>
+        
+        <input type="checkbox" name="chk4" id="chk4">
+        <label for="chk4">과자</label>
+
+        <input type="checkbox" name="chk5" id="chk5">
+        <label for="chk5">오렌지</label>
+    </p>
+    
+</body>
+</html>

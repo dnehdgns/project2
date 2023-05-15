@@ -1,0 +1,42 @@
+/* box1과 box2의 공통부분 */
+
+.box {
+    background-color: #efefef;
+    width: 310px;
+    padding : 20px 25px;
+    box-sizing: border-box;
+    margin: 50px auto;
+}
+
+.box1 a {}
+.box1 a img {
+    padding-bottom: 25px;
+}
+.box1 a h3 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+.box1 a p {
+    /* display: block; */
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+
+.box2 {}
+.box2 a {}
+.box2 a img {
+    padding-bottom: 25px;
+}
+.box2 a strong {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    display: block;
+}
+.box2 a em {
+    display: block;
+    font-size: 12px;
+    padding-bottom: 30px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+    <script>
+        'use strict';
+
+        // let code = prompt('코드입력');
+        // let len = code.length;
+        // let m = 6-len;
+        // let result;
+
+        // // let num = Number(code);
+        // // document.write(num);
+
+        // function make(item){
+        //     if(m>=0 && m<=6 && !isNaN(item)) {
+        //         for(let i=0; i<m; m--)
+        //         {
+        //             item = '0'+item;
+        //         }
+        //         result = item;
+        //         }else{
+        //             alert('올바르지않은 값입니다');
+        //             result = ''
+        //         }
+        //         return result;
+        //     }
+
+        // document.write(make(code));
+
+        let Gcode = prompt('주민등록번호 뒷자리 입력');
+
+        if(isNaN(Gcode) || Gcode == '') {
+            alert('잘못된형식입니다');
+        } 
+        else if(Gcode.length <=7 && Gcode.charAt(0)==1 || Gcode.charAt(0)==3) {
+            alert('남자입니다');
+        }
+        else if(Gcode.length <=7 && Gcode.charAt(0)==2 || Gcode.charAt(0)==4) {
+            alert('여자입니다')
+        }else {
+            alert('범위 초과');
+        }
+
+
+    </script> 
+</head>
+<body>
+   
+</body>
+</html>

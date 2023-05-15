@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+</head>
+<body>
+   <p>태그선택자</p>
+   <ul>
+    <li>list</li>
+    <li>list</li>
+    <li>list</li>
+    <li>list</li>
+    <li>list</li>
+   </ul>
+   <div>
+    <p>문단내용</p>
+   </div>
+   <p>나도분단</p>
+
+    <script>
+        'use strict';
+
+        let arr = ['사과','딸기','수박','참외','키위'];
+        let li = document.getElementsByTagName('li');
+
+
+        for(let num in li) {
+            console.log(num);
+            li[num].innerHTML = arr[num];
+            li[num].style.fontSize = '25px'
+            li[num].style.border = '1px solid #000'
+            li[num].style.width = '100px'
+            li[num].style.textAlign = 'center'
+        }
+    </script> 
+</body>
+</html>

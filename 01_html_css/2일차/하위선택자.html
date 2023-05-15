@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        /* div article h2 {color: aqua;}
+        div section p {color: brown;} */
+        div {}
+        div > article {}
+        div h2 { background-color: aqua; color: hotpink; font-size: 20px; }
+        div > article > p { background-color: skyblue;}
+
+        div {}
+        div > section {}
+        div > section > h2 { background-color: lime;}
+        div > section > p { background-color: aquamarine;}
+    </style>
+</head>
+<body>
+
+
+    <div>
+        <article>
+            <h2>제목2</h2>
+            <p>연습입니다</p>
+        </article>
+        <section>
+            <h2>제목2</h2>
+            <p>연습입니다</p>
+        </section>
+    </div>
+    <pre>
+        /////////////////////////////////////
+
+        하위선택자 (주소 개념처럼 생각하자)
+
+        인천 남동구 인주대로 593 엔타스 12층 5호
+        인천안에 남동구안에 인주대로안에 593안에 엔타스안에 12층안에 5호
+        안에 공백처리 안에는 자식또는 자손(후손)
+
+        A B C :
+        A안에 B의자식, 자손
+
+        공백 ~ 안에 ( 자손, 자식 )
+
+        > : 자식선택자, 꼭 필요한 경우에만 작성한다 (남용하지말것)
+        
+    </pre>
+</body>
+</html>

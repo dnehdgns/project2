@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .box { width: 600px;}
+        .box img{
+            margin: 50px auto;
+        }
+        .box button {
+            width: 120px; height: 40px;
+        }
+    </style>   
+</head>
+<body>
+   <div class="box">
+        <img src="images/move/cat0.png" alt="">
+        <p>
+            <button>중지</button>
+            <button>시작</button>
+        </p>
+   </div>
+
+    <script>
+        'use strict';
+        let pic = document.querySelector('img')
+        let btn = document.querySelectorAll('.box button');
+        let timeId = null, interval = 100;
+        let count = 0;
+
+        timeId = setInterval(move , interval);
+
+        function move(){
+            count++;
+            if(count>5) {count =0}
+            pic.setAttribute('src', `images/move/cat${count}.png`);
+        }
+
+        btn[0].addEventListener('click', () => {
+            clearInterval(timeId)
+            timeId = null;
+        })
+
+        btn[1].addEventListener('click', () => {
+            if(!timeId) {
+                timeId = setInterval(move , interval);
+            }
+        })
+    </script> 
+    
+</body>
+</html>

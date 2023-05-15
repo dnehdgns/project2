@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+</head>
+<body>
+   <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+   </ul>
+
+    <script>
+        'use strict';
+
+        let arr = ['김','이','박','최','정'];
+        let li = document.querySelectorAll('li');
+
+
+        li.forEach( (item, idx) => {
+            item.textContent = arr[idx];
+        })
+
+    </script> 
+    
+</body>
+</html>

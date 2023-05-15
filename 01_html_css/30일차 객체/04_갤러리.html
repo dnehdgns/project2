@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .gallery { width: 600px; border: 1px solid #000; margin: 20px auto; padding: 20px; }
+        .gallery img { width: 600px; }
+        .gallery .txt { margin-top: 10px; margin-bottom: 20px; }
+        .gallery .txt strong { display: block; font-size: 25px; font-weight: 700; margin-bottom: 10px; }
+        .gallery .txt p { font-size: 16px; }
+        .gallery p { font-size: 20px; }
+        .gallery button { width: 120px; height: 50px; }
+    </style>   
+</head>
+<body>
+    <div class="gallery">
+        <img src="images/img0.jpg" alt="">
+        <div class="txt">
+            <strong>aaa</strong>
+            <p>bbbb</p>
+        </div>
+        <p>
+            <button class="prev">이전</button>
+            <button class="next">다음</button>
+        </p>
+    </div>
+    <script>
+        'use strict';
+        let arr = [];
+        arr[0] = '<strong>야옹</strong><p>야옹야옹</p>';
+        arr[1] = '<strong>야옹1</strong><p>야옹야옹1</p>';
+        arr[2] = '<strong>야옹2</strong><p>야옹야옹2</p>';
+        arr[3] = '<strong>야옹3</strong><p>야옹야옹3</p>';
+        arr[4] = '<strong>야옹4</strong><p>야옹야옹4</p>';
+        arr[5] = '<strong>야옹5</strong><p>야옹야옹5</p>';
+
+        let pic = document.querySelector('.gallery img');
+        let btnPrev = document.querySelector('.gallery button:nth-child(1)')
+        let btnNext = document.querySelector('.gallery button:nth-child(2)')
+        let txt = document.querySelector('.gallery .txt')
+        let alt = document.querySelector('.gallery .txt strong')
+        let count = 0, str = '';
+        let timerId = null, interval=3000;
+        
+        timerId = setInterval(roll, interval)
+        txt.innerHTML = arr[count];
+        alt = document.querySelector('.gallery .txt strong')
+        str = alt.textContent;
+        pic.setAttribute('alt', str);
+        console.log(str);
+
+        function banner(num) {
+            txt.innerHTML = arr[num];
+            pic.setAttribute('src', `images/img${num}.jpg`)
+            alt = document.querySelector('.gallery .txt strong')
+            str = alt.textContent;
+            pic.setAttribute('alt', str);
+            pic.animate([
+                {opacity:0},
+                {opacity:1}
+            ],400)
+            txt.animate([
+                {opacity:0, transform : 'translateX(60px)'},
+                {opacity:1, transform : 'translateX(0px)'}
+            ],500)
+        }
+
+        function roll(){
+            count++;
+            if(count>5) {count=0}
+            banner(count)
+        }
+
+        btnNext.addEventListener('click', () => {
+            count++;
+            if(count>5) {count=5}
+            banner(count)
+        })
+
+        btnPrev.addEventListener('click', () => {
+            count--;
+            if(count<0) {count=0}
+            banner(count)
+        })
+    </script> 
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        textarea {
+            vertical-align: top;
+            /* 하단부분 오차생김 */
+            width: 300px;
+            border: 1px solid #000;
+        }
+    </style>   
+</head>
+<body>
+
+    <textarea cols="300" rows="10" placeholder="문의글 남기기"></textarea>
+    <p>aaa</p>
+    <div>남은글자수 50</div>
+
+    <script>
+        'use strict';
+        let tArea = document.querySelector('textarea');
+        let p = document.querySelector('p');
+        let div = document.querySelector('div');
+        let count = 50;
+        let txt = ''
+
+        tArea.addEventListener('keyup', e => {
+            txt = tArea.value;
+            tArea.maxLength = 50;
+
+            if(txt.length <= 50) {
+                p.textContent = `글자수: ${txt.length}`;
+                div.textContent = `남은글자수 : ${count-txt.length}`;
+            } else {
+                e.preventDefault();
+            }
+        })
+    </script> 
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <style>
+        :root {
+            --swiper-theme-color: darkblue;
+        }
+        #mainVisual .swiper-button-next,#mainVisual .swiper-rtl .swiper-button-prev {
+            right: 50px;
+            left: auto;
+        }
+        #mainVisual .swiper-button-prev, #mainVisual .swiper-rtl .swiper-button-next {
+            left: 50px;
+            right: auto;
+        }
+        /* #color {
+            --swiper-theme-color: red;
+        } */
+        #mainVisual .swiper-pagination-bullet { background: #fff;}
+        #mainVisual .swiper-pagination-bullet-active { background: red;}
+
+        #mainVisual .swiper-horizontal>.swiper-pagination-bullets, #mainVisual .swiper-pagination-bullets.swiper-pagination-horizontal, #mainVisual .swiper-pagination-custom, .swiper-pagination-fraction {
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="swiper mySwiper" id="mainVisual">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/main0.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/main1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/main2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/main3.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination" id="color"></div>
+    </div>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },            
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</html>

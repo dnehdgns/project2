@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+</head>
+<body>
+   <button>aa</button>
+
+    <script>
+        'use strict';
+        let btn = document.querySelector('button');
+        let isPlay = true;
+
+        btn.addEventListener('click', () => {
+            if(isPlay) {
+                btn.textContent = '안녕';
+            } else {
+                btn.textContent = '잘가'
+            }
+            isPlay = !isPlay;
+        })
+    </script> 
+    
+</body>
+</html>

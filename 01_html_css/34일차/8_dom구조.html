@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .box {
+            width: 200px; margin: 30px;
+        }
+        .box ul {}
+        .box ul li { line-height: 40px; border: 1px solid #000; margin-bottom: 5px; text-indent: 10px;}
+        p { margin-bottom: 5px; }
+    </style>   
+</head>
+<body>
+    <div class="box">      
+        <ul class="list">
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>hi</li>
+        </ul>
+        <!-- 주석처리 -->
+        <p class="txt1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        </p>
+        <p class="txt1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        </p>
+  
+    </div>
+
+    <script>
+        'use strict';
+        let list = document.querySelector('.list');
+        let li = document.querySelectorAll('.list li');
+        let p = document.querySelector('p');
+
+        let a1 = list.firstChild;
+        let a2 = list.lastChild;
+        let a3 = list.parentNode
+        let a4 = li[0].nextSibling.nextSibling;
+        a4.style.backgroundColor = 'lime';
+        let a5 = li[2].nextSibling.nextSibling.nextSibling.nextSibling;
+        a5.style.backgroundColor = 'red';
+        a5.textContent = '안녕'
+
+        let a6 = li[6].previousSibling.previousSibling;
+        a6.textContent = '잘가';
+        a6.style.backgroundColor = 'blue';
+        console.log(list.childNodes);
+
+        let a7 = li[8].nodeType;
+        let a8 = document.nodeType;
+        let a9 = li[2].nextSibling.nodeType;
+
+        li[0].innerHTML = `0/${a1}`;
+        li[1].innerHTML = `1/${a2}`;
+        li[2].innerHTML = `2/${a3}`;
+        li[3].innerHTML = `3/${a4}`;
+        // li[4].innerHTML = `4/${}`;
+        // li[5].innerHTML = `5/${}`;
+        // li[6].innerHTML = `6/${}`;
+        // li[7].innerHTML = `7/${}`;
+        // li[8].innerHTML = `8/${}`;
+        // li[9].innerHTML = `9/${}`;
+    </script> 
+    <pre>
+        childNodes : 자식노드들 (유사배열)
+        firstchild : 기준노드의 첫번쨰 자식
+        lastchild : 기준노드의 마지막 자식
+        nextSibling : 다음 형제노드
+        preSibling : 다음 이전노드
+        parentNode : 부모노드
+        nodeType : 노드유형 (요소:1, 텍스트:3, document:9);
+        nodeValue : 값
+    </pre>
+</body>
+</html>

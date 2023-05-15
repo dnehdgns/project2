@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100%;
+            height: 1000px;
+        }
+        div:nth-child(1) {
+            background: red;
+        }
+        div:nth-child(2) {
+            background: pink;
+        }
+        .top {
+            width: 80px; height: 80px;
+            text-align: center;
+            line-height: 80px; font-size: 18px;
+            color:#fff;
+            background: #000;
+
+            position: fixed;
+            left: 80%;
+            bottom: 0;
+            cursor: pointer;
+        }
+
+    </style>
+    <script>
+        'use strict'
+    </script>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div>
+        <p class="top">맨위</p>
+    </div>
+
+    <pre>
+        position : fixed
+        무조건 부모는 body
+        left, top, bottom, right 사용가능
+        단위는 px, %
+    </pre>
+</body>
+</html>

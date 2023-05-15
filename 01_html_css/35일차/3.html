@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="1.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        li {
+            margin: 30px;
+            border: 1px solid #000;
+            width: 200px; height: 40px; line-height: 40px;
+            text-align: center;
+        }
+    </style>   
+</head>
+<body>
+    <ul>
+        <li class="item1">aa</li>
+        <li class="item2">bb</li>
+        <li class="item3">cc</li>
+    </ul>
+    <script>
+        'use strict';
+        // const get = (target) => {
+        //     return document.querySelector(target);
+        // }
+
+        // const getAll = (target) => {
+        //     return document.querySelectorAll(target);
+        // }
+        
+        // 경로 , 값을 구별하기위해서 경로에$붙임
+        // let item1 = document.querySelector('.item1');
+        let item1 = get('.item1');
+        // let item2 = document.querySelector('.item2');
+        let item2 = get('.item2');
+        // let item3 = document.querySelector('.item3');
+        let item3 = get('.item3');
+
+        item1.addEventListener('click', e => {
+            e.currentTarget.style.backgroundColor = 'red'
+        })
+        item2.addEventListener('click', e => {
+            let current = e.currentTarget;
+            current.style.backgroundColor = 'lime';
+        })
+        item3.addEventListener('click', e => {
+            let current = e.currentTarget;
+            current.style.backgroundColor = 'hotpink';
+        })
+    </script> 
+    
+</body>
+
+</html>

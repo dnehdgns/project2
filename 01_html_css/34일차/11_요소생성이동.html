@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+</head>
+<body>
+   <div class="box">
+    <h2>aaa</h2>
+    <h3>bbbb</h3>
+    <h4>ccccc</h4>
+    <p>ddddd</p>
+    <span>문단연습</span>
+    <img src="images/cat0.jpg" alt="" width="300">
+   </div>
+
+    <script>
+        'use strict';
+
+        let box = document.querySelector('.box');
+        let h2 = document.querySelector('.box h2');
+        let h3 = document.querySelector('.box h3');
+        let h4 = document.querySelector('.box h4');
+        let img = document.querySelector('.box img')
+        let p = document.querySelector('.box p')
+        let span = document.querySelector('.box span')
+    </script> 
+    <pre>
+        노드로 사용
+
+
+        appendChild() : 부모요소의 맨뒤 추가 (생성)/ 이동
+        부모.appendChild() : 요소가 존재하면 이동
+        부모.appendChild() : 요소 생성후 부모 맨뒤에 붙이기
+
+        removeChild() : 부모요소의 맨뒤 제거 (삭제)/ 이동
+        replaceChild()
+        insertBefore()
+    </pre>
+</body>
+</html>

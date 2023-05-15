@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .box { margin: 30px; width: 1000px; }
+        .box span { display: inline-block; width: 80px; height: 80px; font-size: 80px; line-height: 1; text-transform: uppercase; font-weight: 700; border: 1px solid #000; text-align: center; }
+
+        /* .box span:nth-child(1) { transform: skew(15deg);}
+        .box span:nth-child(2) { transform: skew(-15deg);}
+        .box span:nth-child(3) { transform: skew(15deg); }
+        .box span:nth-child(4) { transform: skew(-15deg); }
+        .box span:nth-child(5) { transform: skew(15deg); }
+        .box span:nth-child(6) { transform: skew(-15deg); }
+        .box span:nth-child(7) { transform: skew(15deg); } */
+
+        .box span:nth-child(odd) { transform: skewY(15deg);}
+        .box span:nth-child(even) { transform: skewY(-15deg);}
+
+        .box span:nth-child(3n+1) { background: red;}
+        .box span:nth-child(3n+2) { background: blue;}
+        .box span:nth-child(3n) { background: lime;}
+    </style>    
+</head>
+<body>
+   <div class="box">
+    <span>p</span>
+    <span>r</span>
+    <span>o</span>
+    <span>j</span>
+    <span>e</span>
+    <span>c</span>
+    <span>t</span>
+   </div>
+</body>
+</html>

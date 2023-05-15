@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">   
+    <style>
+        .ex {width: 1000px; margin: 50px auto;}
+
+        .ex .tb { width: 100%; border-top: 2px solid #000;}
+
+        .ex .tb .w1 { width: 80px;}
+        .ex .tb .w2 {}
+        .ex .tb .w3 { width: 100px;}
+        .ex .tb .w4 { width: 80px;}
+
+        .ex .tb th, .ex .tb td {
+            height: 50px; border-bottom: 1px solid #dcdcdc;
+            vertical-align: middle; text-align: center;
+        }
+
+        .ex .tb thead {}
+        .ex .tb thead tr {}
+        .ex .tb thead tr th { font-size: 15px; font-weight: 700;}
+
+        .ex .tb tbody {}
+        .ex .tb tbody tr {}
+        .ex .tb tbody tr:last-child { border-bottom: 2px solid #000;}
+        .ex .tb tbody tr td {}
+        .ex .tb tbody tr td:nth-child(2) { text-align: left; text-indent: 20px; font-weight: 700;}
+        .ex .tb tbody tr td:nth-child(3), .ex .tb tbody tr td:nth-child(4) { color: #999;}
+
+        .ex .paging { margin-top: 50px; text-align: center;}
+        .ex .paging a { display: inline-block; width: 35px; height: 35px; border: 1px solid #000; line-height: 35px;}
+        .ex .paging a.on { background: red; border-color: red; color: #fff;}
+
+    </style>
+      
+</head>
+<body>
+      <div class="ex">
+        <table class="tb">
+            <caption>
+                <strong></strong>
+                <p></p>
+            </caption>
+            <colgroup>
+                <col class="w1">
+                <col class="w2">
+                <col class="w3">
+                <col class="w4">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">번호</th>
+                    <th scope="col">제목</th>
+                    <th scope="col">등록일</th>
+                    <th scope="col">조회</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1077</td>
+                    <td>뮤지컬 [지저스 크라이스트 수퍼스타] 초대 이벤트</td>
+                    <td>2022.12.01</td>
+                    <td>586</td>
+                </tr>
+                <tr>
+                    <td>1076</td>
+                    <td>2023학년도 상반기 신·편입생 모집안내</td>
+                    <td>2022.12.01</td>
+                    <td>3381</td>
+                </tr>
+                <tr>
+                    <td>1075</td>
+                    <td>2023학년도 상반기 국가장학금 및 학자금 대출 안내</td>
+                    <td>2022.12.01</td>
+                    <td>947</td>
+                </tr>
+                <tr>
+                    <td>1074</td>
+                    <td>입학서류 온라인 제출서비스 안내</td>
+                    <td>2022.12.01</td>
+                    <td>134</td>
+                </tr>
+                <tr>
+                    <td>1073</td>
+                    <td>2023학년도 상반기 신·편입생 모집안내</td>
+                    <td>2022.11.30</td>
+                    <td>2252</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="paging">
+            <a href="#"> &lt; </a>
+            <a href="#" class="on">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#"> &gt;</a>
+        </p>
+      </div>
+    
+</body>
+</html>

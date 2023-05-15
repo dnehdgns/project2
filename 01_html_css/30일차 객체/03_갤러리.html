@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .gallery {
+            width: 500px; margin: 50px auto; border: 1px solid #000; padding: 20px;
+        }
+        .gallery h2{
+            font-size: 40px; font-weight: 700; margin-bottom: 15px;
+        }
+        .gallery img{
+            width: 500px; height: 340px;
+        }
+        .gallery button {
+            padding: 10px 15px;
+        }
+    </style>   
+</head>
+<body>
+   <div class="gallery">
+    <h2>aaa</h2>
+    <img src="images/img0.jpg" alt="">
+    <p>
+        <button>이미지1</button>
+        <button>이미지2</button>
+        <button>이미지3</button>
+        <button>이미지4</button>
+        <button>이미지5</button>
+    </p>
+   </div>
+
+    <script>
+        'use strict';
+        let arr = ['서울','대구','대전','부산','인천'];
+        let pic = document.querySelector('.gallery img');
+        let txt = document.querySelector('.gallery h2');
+        let btn = document.querySelectorAll('.gallery p button');
+        let timeId = null, inverval = 3000;
+        let count = 0; let check = 0;
+        txt.textContent = arr[count];
+
+        timeId = setInterval(make , inverval)
+
+        function banner(num){
+            txt.textContent = arr[num];
+            pic.setAttribute('src', `images/img${num}.jpg`);
+            pic.animate([
+                {opacity:0},
+                {opacity:1}
+            ],400)
+        }
+
+        function make() {
+            count++;
+            if(count>4) {count=0}
+            banner(count);
+        }
+
+        // for(let i=0; i<btn.length; i++) {
+        //         btn[i].addEventListener('click', () => {
+        //         txt.textContent = arr[i];
+        //         pic.setAttribute('src', `images/img${i}.jpg`);
+        //     })
+        // }
+
+        btn.forEach(function(item,idx){
+            item.addEventListener('click', () =>{
+                count = idx;
+                banner(idx);
+            })
+            clearInterval(timeId)
+            timeId = setInterval(make , inverval)
+        })
+    </script> 
+    
+</body>
+</html>

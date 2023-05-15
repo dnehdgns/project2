@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .box {
+            margin: 30px;
+        }
+        .box p {
+            border: 1px solid #000;
+            width: 200px; line-height: 50px;
+            text-align: center;
+        }
+    </style>   
+
+</head>
+<body>
+   <div class="box">
+        <!-- <p>xxx</p> -->
+   </div>
+
+   <script>
+    'use strict';
+
+        let arr = [10,20,30,40,50];
+        let dom = document.querySelector('.box');
+        let dom_arr = ''
+        // for(let i=0; i<arr.length; i++) {
+        //     dom_arr += `<p>${arr[i]}</p>`;
+        // }
+
+
+        dom_arr = arr.map(item => {
+            return `<p>${item}</p>`;
+        })
+        dom.innerHTML = dom_arr.join('');
+        // dom.innerHTML('<p>안녕</p>');
+
+    </script> 
+</body>
+</html>

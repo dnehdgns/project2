@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+        'use strict'
+
+        // let num = Number(prompt('월입력',''));
+        // let mon_day;
+        // let msg;
+
+        // switch(num) {
+        //     case 2 : mon_day = 28; msg = num+'월은'+mon_day+'일까지 입니다.'; break;
+        //     case 1 :
+        //     case 3 :
+        //     case 5 :
+        //     case 7 :
+        //     case 8 :
+        //     case 10 :
+        //     case 12 : mon_day = 31; msg = num+'월은'+mon_day+'일까지 입니다.'; break;
+        //     case 4 :
+        //     case 6 :
+        //     case 9 :
+        //     case 11 : mon_day = 30; msg = num+'월은'+mon_day+'일까지 입니다.'; break;
+        //     default : msg = '다시 입력하세요. 해당 월은 존재하지 않습니다.';
+        // }
+
+        // document.write(msg);
+
+        let num1 = Number(prompt('숫자1입력',''));
+        let num2 = Number(prompt('숫자2입력',''));
+        let op = prompt('연산입력');
+        let result;
+        let msg;
+
+        switch(op) {
+            case '+' : result = num1 + num2; msg = '결과' +num1 + op + num2 + '=' + result; break;
+            case '-' : result = num1 - num2; msg = '결과' +num1 + op + num2 + '=' + result; break;
+            case '*' : result = num1 * num2; msg = '결과' +num1 + op + num2 + '=' + result; break;
+            case '/' : result = num1 / num2; msg = '결과' +num1 + op + num2 + '=' + result; break;
+            case '%' : result = num1 % num2; msg = '결과' +num1 + op + num2 + '=' + result; break;
+            default: msg = '다시입력하세요. 해당연산자는 존재하지않습니다.'
+        }
+
+        document.write(msg);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

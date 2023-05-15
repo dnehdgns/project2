@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+</head>
+<body>
+   <div id="box">ㅁㅁㅁ</div>
+    <button onclick="make('스타일값 넣기')">확인</button>
+
+    <script>
+        'use strict';
+
+        const make = (x) => {
+            // alert(x);
+            let dom = document.getElementById('box');
+
+            dom.innerHTML = x;
+            dom.style.border = '1px solid #000';
+            dom.style.width = '250px'
+            dom.style.textAlign = 'center';
+            dom.style.backgroundColor = 'red';
+        }
+
+    </script> 
+</body>
+</html>

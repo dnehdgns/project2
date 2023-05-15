@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        h2 { font-size: 30px; }
+        h2::after { content: 'hihi';}
+        .box {
+            width: 150px; height: 150px; border: 1px solid #000;
+            background: lime; position: relative;
+            left: 10px; top: 10px; margin-bottom: 20px;
+        }
+    </style>   
+</head>
+<body>
+   <h2>안녕</h2>
+
+   <div class="box">
+    aaaa
+   </div>
+   <p>
+        <button>확인</button>
+        <button>확인</button>
+        <button>확인</button>
+        <button>확인</button>
+   </p>
+
+    <script>
+        'use strict';
+        let dom = document.querySelector('.box');
+        let h2 = document.querySelector('h2')
+        let btn = document.querySelectorAll('button');
+        let win = window.getComputedStyle(dom);
+        let x,y,w,h;
+
+        btn[0].addEventListener('click', e => {
+            x = win.getPropertyValue('left');
+            y = win.getPropertyValue('top');
+            dom.textContent = `x: ${x}  y: ${y}`;
+        })
+        btn[1].addEventListener('click', e => {
+            x = getComputedStyle(dom).left;
+            y = getComputedStyle(dom).top;
+            dom.textContent = `x: ${x}  y: ${y}`;
+        })
+        btn[2].addEventListener('click', e => {
+            w = getComputedStyle(dom).width;
+            h = getComputedStyle(dom).height;
+            dom.textContent = `w: ${w}  h: ${h}`;
+        })
+        btn[3].addEventListener('click', e => {
+            let after = getComputedStyle(h2, 'after').content;
+            dom.textContent = after
+        })
+        
+
+    </script> 
+    
+</body>
+</html>

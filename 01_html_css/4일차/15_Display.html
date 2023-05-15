@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .list {
+            font-size: 0; margin: 30px;
+            width: 600px;
+        }
+        .list li {
+            display: inline-block;
+            width: 150px; height: 150px;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 150px;
+            border-right: none;
+        }
+        .list li strong {
+            font-size: 16px;
+            border: 1px solid #000;
+
+        }
+        .list li.last {
+            border-right: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+     <ul class="list">
+        <li><strong>타이틀</strong></li>
+        <li><strong>타이틀</strong></li>
+        <li class="last"><strong>타이틀</strong></li>
+     </ul>
+
+    <pre>
+        ------------------
+        display : inline-block
+        1. 인라인처럼 옆으로 나열된다
+        2. 블럭처럼 너비/높이/패딩/마진 사용가능
+        3. 사이간격 없애기
+            부모 font-size:0
+            자신의 폰트 크기를 변경
+
+    </pre>
+</body>
+</html>

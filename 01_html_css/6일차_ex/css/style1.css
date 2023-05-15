@@ -1,0 +1,14 @@
+.con-box { width: 960px; height: 440px; background-repeat: no-repeat; background-position: 0 0; background-image: url(../images/vision_img01.jpg); text-align: center; padding: 50px; box-sizing: border-box; margin: auto; }
+.con-box h2 { font-size: 30px; margin-bottom: 30px; font-weight: 500; }
+
+.con-box h2::after {
+    content:"";
+    display: block;
+    width: 57px;
+    height: 2px;
+    background: #000;
+    margin:10px auto 0;
+}
+
+
+.con-box h3 { font-size: 35px; font-weight: 500; line-height: 1.3; }

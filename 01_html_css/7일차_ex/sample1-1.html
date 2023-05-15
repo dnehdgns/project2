@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style1.css"> 
+    <style>
+        .con-box {
+            width: 100%;
+            border: 2px solid #000;
+        }
+        .con-box .inner {
+            width: 1300px;
+            padding: 100px 0 ;
+            margin: auto;       
+        }
+
+        .con-box .list {
+            margin: 50px 0;
+        }
+        .con-box .list2 {
+            display: flex;
+        }
+        .con-box .list2 li {
+            width: 433px;
+            height: 215pt;
+            border: 1px solid #999;
+            box-sizing: border-box;
+            margin-left: -1px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .con-box .list2 li:last-child {
+            border-right: 1px solid #000;
+        }
+
+        .con-box .list2 li p {
+            margin-top: 15px;
+        }
+    </style>       
+</head>
+<body>
+    <div class="con-box">
+        <div class="inner list list2">
+            <li>
+                <span>
+                    <img src="images/home_ov_con01_ico01.png" alt="">
+                </span>
+                <p>공실/연체와 관계없이<br>
+                    매월 약정 임대료 지급</p>
+            </li>
+            <li>
+                <span>
+                    <img src="images/home_ov_con01_ico02.png" alt="">
+                </span>
+                <p>편안한 삶을 위한 행복 도우미<br>
+                    24시간 홈즈케어 고객센터</p>
+            </li>
+            <li>
+                <span>
+                    <img src="images/home_ov_con01_ico03.png" alt="">
+                </span>
+                <p>임차인 모집부터 민원관리까지<br>
+                    복작한 임대관리업무 종합대행</p>
+            </li>
+        </div>
+    </div>
+</body>
+</html>

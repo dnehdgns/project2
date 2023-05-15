@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+</head>
+<body>
+   <div>
+        <input type="checkbox" name="chk1" value="사과" checked> 사과
+        <input type="checkbox" name="chk2" value="배"> 배
+        <input type="checkbox" name="chk3" value="수박">  수박
+        <input type="checkbox" name="chk4" value="참외"> 참외
+        <input type="checkbox" name="chk5" value="토마토"> 토마토
+   </div>
+   <p>aa</p>
+
+    <script>
+        'use strict';
+        let input = document.querySelectorAll('input')
+        let p = document.querySelector('p');
+
+        input.forEach(item => {
+            item.addEventListener('change', e => {
+                let current = e.currentTarget;
+                let arr = [];
+                if(input.checked){
+                    arr.push(input.value);
+                    p.textContent = arr.join(',');
+                }
+                input.forEach( c => {
+                    if(c.checked) {
+                        arr.push(c.value);
+                    }
+                })
+                console.log(current.value);
+                p.textContent = arr.join(',');
+            })
+        })
+    </script> 
+    
+</body>
+</html>

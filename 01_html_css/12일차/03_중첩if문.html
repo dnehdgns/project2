@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+        'use strict'
+
+        // let num = Number(prompt('숫자입력', ''));
+
+        // if(num>=30) {
+        //     if(num%2 == 0) {
+        //         alert('짝수');
+        //     } else {
+        //         alert('홀수')
+        //     }
+        // } else{
+        //     if(num%3==0) {
+        //         alert('3의배수')
+        //     }
+        //     else {
+        //         alert('3의배수가아니다')
+        //     }
+        // }
+
+        // let num = Number(prompt('점수 입력',''));
+
+        // if(num>=0 && num<=100) {
+        //     if(num>=80) {
+        //         alert('합격');
+        //     } else {
+        //         alert('불합격');
+        //     }
+        // } else {
+        //     alert('숫자를 다시 입력해주세요');
+        // }
+
+        // let id = prompt('아이디입력','');
+        // let pw = prompt('비밀번호 입력');
+
+        // let check_id = 'ezen';
+        // let check_pw = '1234';
+
+        // if(id == check_id && pw == check_pw) {
+        //     alert('로그인성공');
+        // } else {
+        //     alert('로그인실패');
+        // }
+
+        // if(id == check_id) {
+        //     let pw = prompt('비밀번호 입력');
+        //     if(pw==check_pw){
+        //         alert('로그인 성공');
+        //     }
+        //     else {
+        //         alert('비밀번호 오류');
+        //     }
+        // } else {
+        //     alert('아이디오류');
+        // }
+
+        let id = prompt('아이디 입력','');
+
+        let check_id = 'ezen';
+
+        if(id == check_id) {
+            let level = Number(prompt('레벨 입력',''));
+            if(level >=5 && level <=10) {
+                alert(level+'레벨은 해당 컨텐츠를 사용할수 있습니다');
+            } else {
+                alert(level+'레벨은 해당 컨텐츠를 사용할수 없습니다');
+            }
+        } else {
+            alert('해당 아이디는 존재하지 않습니다.');
+        }
+    </script>
+</head>
+<body>
+    
+
+    <pre>
+        중첩if문 : if문 안에 if문 처리
+        if(조건) {
+            if(조건) {
+                실행문
+            }
+        }
+        1. 30보다 크거나 같으면
+            짝수/홀수
+            그렇지않으면
+            3의배수/3의 배수가 아니다
+    </pre>
+</body>
+</html>

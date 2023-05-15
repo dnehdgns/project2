@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+</head>
+<body>
+
+    <div id="box"></div>
+
+    <script>
+        'use strict';
+
+        let dom = document.getElementById('box');
+        let arr = ['가나다','라마바','사아자','차카타','파하'];
+        let ran = Math.floor(Math.random() * arr.length);
+        dom.innerHTML = arr[ran];
+
+        dom.style.width = '250px';
+        dom.style.height = '100px';
+        dom.style.backgroundColor = 'pink';
+        dom.style.lineHeight = '60px';
+        dom.style.textAlign = 'center';
+        dom.style.margin = 'auto';
+
+    </script> 
+   
+</body>
+</html>

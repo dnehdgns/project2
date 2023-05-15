@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/join.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">   
+    <style>
+        
+    </style>
+      
+</head>
+<body>
+      <p id="skipNav"><a href="content">본문바로가기</a></p>
+      <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <img src="​https://via.placeholder.com" alt="">
+            </div>
+        </header>
+        <main id="container" class="join">
+            <section id="content">
+                <div class="inner">
+                    <h1>회원가입 정보 입력</h1>
+                    <ul>
+                        <li><img src="images/member_bg1.png" alt=""><p>약관동의</p></li>
+                        <li><img src="images/member_bg2.png" alt=""><p>인증</p></li>
+                        <li><img src="images/member_bg3.png" alt=""><p>정보입력</p></li>
+                        <li><img src="images/member_bg4.png" alt=""><p>가입완료</p></li>
+                    </ul>
+                    <h2 class="first">정보입력</h2>
+                    <h2>회원 정보 입력</h2>
+                    <p>(<b>*</b>필수입력 항목)</p>
+                    <form action="#" method="post" name="form" target="_blank">
+                        <fieldset>
+                            <legend>회원 정보 입력</legend>
+                            <table>
+                                <caption></caption>
+                                <colgroup>
+                                    <col class="w1">
+                                    <col class="w2">
+                                </colgroup>
+                                <thead></thead>
+                                <tbody>
+                                    <tr>
+                                        <td><label for="userName">이름</label><b>*</b></td>
+                                        <td><input type="text" id="userName" class="w120" required placeholder="홍길동"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="userDate">생년월일</label><b>*</b></td>
+                                        <td>
+                                            <input type="text" id="userDate" class="w120" required placeholder="2022.03.18">
+                                            <input type="radio" name="userDate" id="userDate1">
+                                            <label for="userDate">양력</label>
+                                            <input type="radio" name="userDate" id="userDate2">
+                                            <label for="userDate">음력</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="userGender">성별</label><b>*</b></td>
+                                        <td>
+                                            <input type="radio" name="userGender" id="userGender1">
+                                            <label for="userGender1">남자</label>
+                                            <input type="radio" name="userGender" id="userGender2">
+                                            <label for="userGender2">여자</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="userId">아이디</label><b>*</b></td>
+                                        <td>
+                                            <input type="text" id="userId" class="w120" required placeholder="아이디"> <input type="button" value="중복확인">
+                                            <span>6자 이상(한글/특수문자 불가)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="userPwd">비밀번호</label><b>*</b></td>
+                                        <td><input type="text" id="userPwd"  class="w180" required placeholder="비밀번호"><span>영문, 숫자, 특수문자를 혼합하여 8~15자로 사용 합니다. 공백은 사용 불가합니다.</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="userPwd">비밀번호 확인</label><b>*</b></td>
+                                        <td><input type="text" id="userPwd"  class="w180" required placeholder="비밀번호"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="userAddr">주소<b>*</b></label></td>
+                                        <td>
+                                            <ul>
+                                                <li><input type="text" id="userAddr" class="w90" placeholder="우편번호"><input type="button" value="우편번호찾기"></li>
+                                                <li><input type="text" id="userAddr" placeholder="기본주소" class="wFull"></li>
+                                                <li><input type="text" id="userAddr" placeholder="상세주소" class="wFull"></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="userTel">연락처</label><b>*</b></td>
+                                        <td>
+                                            <select name="phNum" id="userTel" class="w120"><option value="">010</option></select>
+                                            <input type="text" id="userTel" class="w120" required placeholder="0000">
+                                            <input type="text" id="userTel" class="w120" required placeholder="0000">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="userEmail">이메일</label><b>*</b></td>
+                                        <td><input type="text" id="userEmail"  class="w370" required placeholder="xxxx.naver.com">
+                                    </tr>
+                                    <tr>
+                                        <td><label for="emailCheck">이메일 수신여부</label></td>
+                                        <td>
+                                            <input type="radio" name="emailCheck" id="emailCheck1">
+                                            <label for="emailCheck1">예</label>
+                                            <input type="radio" name="emailCheck" id="emailCheck2">
+                                            <label for="emailCheck2">아니요</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="snsCheck">SNS 수신여부</label></td>
+                                        <td>
+                                            <ul>
+                                                <li>
+                                                    <input type="radio" name="snsCheck" id="snsCheck1">
+                                                    <label for="snsCheck1">예</label>
+                                                    <input type="radio" name="snsCheck" id="snsCheck2">
+                                                    <label for="snsCheck2">아니요</label>
+                                                </li>
+                                                <li class="textMain">개인정보보호법 제22조 제3항에 따라 <마케팅 활용에 관한 동의>를 받고자 합니다.</li>
+                                                <li class="text">1. 수집목적 : 예술의전당 기획공연, 이벤트, 할인안내 동의 다양한 정보 제공</li>
+                                                <li class="text">2. 보유기간 : 개인정보 보유기간 만료시까지, 동의 유지기간 동안.</li>
+                                                <li class="text">3. 이용항목 : 휴대폰 번호, 이메일 주소 (동의사항에 한함)</li>
+                                                <li class="text">4. 동의거부시 불이익 : 고객은 동의를 거부할 권리가 있으며, 동의하지 않으실 경우 수집목적에 따른 이벤트 할인안내 등의 정보를 제공받을 수 없습니다.</li>
+                                                <li class="textMain">유료멤버십 골드, 블루, 그린회원에 가입하실 때 SMS 수신 동의시 주요공연의 티켓오픈일자와 할인정보를 보내드립니다.</li>
+                                                <li class="textMain2">회원정보, 예매, 결제정보 및 서비스 중 정책 관련 내용은 수신동의 여부와 관계없이 발송됩니다.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h2 class="second">회원등급 가입</h2>
+                            <table class="tb2">
+                                <caption></caption>
+                                <colgroup>
+                                    <col class="w1">
+                                    <col class="w2">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td><label for="consume">무료회원</label></td>
+                                        <td>
+                                            <ul>
+                                                <li><select name="member" id="consume" class="w180"><option value="">무료회원</option></select></li>
+                                                <li><input type="text" name="explain" id="consume" class="w180"></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <span>* 유료회원(골드/블루) 가입 시 회원카드와 회원물품은 입력하신 주소지로 자동배송 됩니다. (1~2주 이내)<br>
+                                * 유니온페이 제휴회원 가입은 예술의전당 고객센터(02-580-1300)에서만 가능합니다.</span>
+
+                            <p>
+                                <input type="reset" value="취소">
+                                <input type="submit" value="확인">
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
+      </div>
+    
+</body>
+</html>

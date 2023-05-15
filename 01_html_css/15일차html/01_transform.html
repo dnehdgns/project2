@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .box {
+            margin: 10px;
+        }
+        .box div {
+            width: 80px;
+            height: 80px;
+            font-size: 40px;
+            text-align: center;
+            line-height: 2;
+            background: red;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .box div:nth-child(1) {
+            transform:translateX(100px);
+        }
+        .box div:nth-child(2) {
+            transform: translateY(50px);
+        }
+        .box div:nth-child(3) {
+            left: 300px;
+            /* transform: scale(4,3); */
+            /* transform: scaleX(2); */
+            /* transform: scaleY(1.5); */
+            /* transform: scale(3); */
+        }
+        .box div:nth-child(4) {
+            left: 100px;
+            background: aqua;
+            color: #efefef;
+
+            transform: rotate(-45deg);
+        }
+        .box div:nth-child(5) {
+            font-size: 80px;
+            line-height: 80px;
+            font-weight: 900;
+            color: #efefef;
+
+            /* transform: rotateX(20deg); */
+            transform: rotateY(50deg);
+        }
+        .box div:nth-child(6) {
+            /* transform: skewX(30deg); */
+            transform: skew(45deg, 15deg);
+        }
+        .box div:nth-child(7) {
+            left: 300px;
+            transform: translateX(20px) rotate(45deg) scale(2) skew(45deg, 15deg);
+        }
+        .box div:nth-child(8) {}
+        .box div:nth-child(9) {}
+        .box div:nth-child(10) {}
+    </style>    
+    <script>
+        'ust strict'
+        
+    </script>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+   <pre>
+        transform:
+        위치 : 자기 자신이 기준
+        translate(x,y)
+        translateX(x)
+        translateY(y)
+
+        크기 : 100% -> 1배
+        자식들도 크기 적용된다
+        scale(너비,높이)
+        scaleX(너비)
+        scaleY(높이)
+
+        회전 : 
+        rotate : 360도를 기준 deg->양수 음수사용
+        양수         음수
+            위(0)
+        왼(-90) 오(90)
+            아래(180)
+        
+        rotateX() x축기준 회전
+        rotateY() y축기준 회전
+
+        기울기 : 양수 음수 가능
+        skew(x,y)
+        skewX(xdeg)
+        skewY(ydeg)
+   </pre>
+</body>
+</html>

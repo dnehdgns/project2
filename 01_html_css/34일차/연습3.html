@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        div {
+            width: 300px; padding: 10px;
+            border: 1px solid #000;
+            margin: 30px;
+        }
+    </style>   
+</head>
+<body>
+   <div>
+
+   </div>
+
+    <script>
+        'use strict';
+        let div = document.querySelector('div');
+        let txt = '제목'
+        let h2 = document.createElement('h2');
+        console.log(h2);
+        h2.innerHTML = txt
+        div.prepend(h2);
+    </script> 
+    
+</body>
+</html>

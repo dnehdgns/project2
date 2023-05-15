@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+        'use strict'
+
+        // let m = prompt('아무거나');
+        // let output = isNaN(m);
+
+        // document.write(m, typeof m, '<br>');
+        // document.write(output,'<br>');
+
+        //외부연산자 + 제외한 나머지는 계산을 해준다.
+
+        // if( m > 50 ) {
+        //     document.write('범위')
+        // } else {
+        //     document.write('범위초과')
+        // }
+
+        let score = Number(prompt('점수 입력',''));
+        let check = isNaN(score);
+
+        if(!check && (score>0 && score<=100)) {
+            if(score>=90 && score<=100) {
+                alert('1등급')
+            }else if (score>=80 && score<90) {
+                alert('2등급')
+            }else if (score>=70 && score<80) {
+                alert('3등급')
+            }else if (score>=60 && score<70) {
+                alert('4등급')
+            }else {
+                alert('재평가대상입니다.')
+            }
+        } else {
+            alert('올바른 형식이 아닙니다.')
+        }
+    </script>
+</head>
+<body>
+    <pre>
+        isNaN : 숫자, 문자 판별
+        https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/isNaN
+        Not a Number
+        숫자, 공백 : false;
+        문자 : true;
+    </pre>
+</body>
+</html>

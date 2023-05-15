@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: aqua;
+            margin: 10px;
+            position: relative;
+            cursor : pointer;
+        }
+        /* div에 마우스커서를 올려놨을때 */
+        div:hover {
+            width: 500px;
+            transition-property: width;
+            /* 1초 1s 0.3s .3s */
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+    </style>    
+    <script>
+        'ust strict'
+        
+    </script>
+</head>
+<body>
+   <div></div>
+</body>
+</html>

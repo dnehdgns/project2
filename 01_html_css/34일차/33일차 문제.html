@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Document</title> 
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .con-box { width: 1000px; margin:50px auto;  }
+        .con-box h2 { font-size: 50px; margin-bottom: 40px; text-align: center; }
+        .con-box .list { display: flex; flex-wrap: wrap; }
+        .con-box .list li { width: 200px; margin: 10px;  }
+        .con-box .list li img { width: 200px;  }
+    </style>   
+</head>
+<body>
+    <div class="con-box">
+        <h2>사진 갤러리</h2>
+        <ul class="list">
+            <!-- <li><img src="images/cat0.jpg" alt=""></li> -->
+        </ul>
+    </div>
+    <script>
+        let ul = document.querySelector('ul.list');
+        let count = 0;
+        let timer = null;
+        timer = setInterval(make, 500);
+
+        function make() {
+            let li = document.createElement('li');
+            let pic = document.createElement('img');
+            let r = (Math.random()*4).toFixed(0);
+            pic.setAttribute('src', `images/cat${r}.jpg`);
+            li.append(pic);
+            ul.append(li);
+            pic.animate([
+                {opacity : 0},
+                {opacity : 1}
+            ],300)
+            count++;
+
+            if(count>=20) {
+                clearInterval(timer);
+                timer = null;
+            }
+        }
+
+        make();
+    </script>
+</body>
+</html>

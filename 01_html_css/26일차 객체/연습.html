@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+
+    </style>   
+    <script>
+        'use strict';
+
+        // let users = ['user1', 'user2', 'user3', 'user4', 'user5', 'user6'];
+
+        // let arr = [];
+        // arr[0] = '홍길동'
+        // arr[1] = 20
+        // arr[2] = '인천'
+        // arr[3] = '남자'
+        // arr[4] = '01011112222'
+
+        // document.write(`이름 : ${arr[0]} <br>`);
+        // document.write(`나이 : ${arr[1]} <br>`);
+        // document.write(`지역 : ${arr[2]} <br>`);
+        // document.write(`성별 : ${arr[3]} <br>`);
+        // document.write(`연락처 : ${arr[4]} <br><br>`);
+
+        // let menuList = ['회사소개', '인사말', '제품소개', '실적', '고객문의'];
+
+        // for(let i=0; i<menuList.length; i++) {
+        //     document.write(menuList[i] + '<br>');
+        // }
+
+        // for(let i in arr) {
+        //     document.write(arr[i] + '<br>');
+        // }
+
+        // for(let item of menuList) {
+        //     document.write(item + '<br>')
+        // }
+
+        let names = ['강아지', '고양이', '사자', '호랑이'];
+        let check = 0
+        while(check==0){
+            let name = prompt('이름을 입력해주세요');
+            for(let animal of names) {
+                if(animal == name){
+                    alert(`${animal} 검색했습니다.`)
+                    check=1;
+                }
+                else {
+                    alert('잘못된 이름입니다.')
+                }
+            }
+        }
+    </script> 
+</head>
+<body>
+   
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        div + p { background-color: aqua; font-size: 20px; color: red;}
+        div h2 {}
+        div ul {}
+        div ul li {}
+
+        article + p { background-color: aliceblue; font-size: 25px; color: lime;}
+        article dl {}
+        article dl dt {}
+        article dl dd {}
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2>제목2</h2>
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+        </ul>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sapiente.</p>
+    
+    <article>
+        <dl>
+            <dt>용어1</dt>
+            <dd>설명1</dd>
+            <dd>설명2</dd>
+            <dd>설명3</dd>
+            <dd>설명4</dd>
+            <dd>설명5</dd>
+            <dd>설명6</dd>
+        </dl>
+    </article>
+
+    <p>Lorem ipsum dolor sit.</p>
+
+    <pre>
+        /////////////////////////////////////
+        
+        형제 선택자
+        + : 형제선택자 바로아래 1개만 
+            ( 많이 사용함 )
+        형식
+        경로 + 요소 {}
+        a b c + d {}
+        d는 경로를 작성하지 않는다 ( 대상요소만 작성 )
+        a b c + d
+        <a>
+            <b>
+                <c>제목</c>
+                <d>형제1</d>
+                <e>형제2</e>
+            </b>
+        </a>
+    </pre>
+</body>
+</html>

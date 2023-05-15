@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        .box {
+            border: 1px solid #000;
+            text-align: center;
+            width: 300px;
+        }
+    </style>   
+</head>
+<body>
+    
+    <div class="box">
+        ㅁㅁㅁ
+    </div>
+    <p>
+        <button onclick="make1()">innerHTML</button>
+        <button onclick="make2()">innerText</button>
+        <button onclick="make3()">textContent</button>
+    </p>
+
+    <script>
+        'use strict';
+
+        let btn1 = document.querySelector('button:nth-child(1)');
+        let btn2 = document.querySelector('button:nth-child(2)');
+        let btn3 = document.querySelector('button:nth-child(3)');
+        let dom = document.querySelector('.box')
+
+        function make1(){
+            dom.innerHTML = '안녕하세요 <span>홍길동</span>입니다';
+        }
+        function make2(){
+            dom.innerText = '안녕하세요 <span>고양이</span>입니다';
+        }
+        function make3(){
+            dom.textContent = '안녕하세요 <span>강아지</span>입니다';
+        }
+    </script> 
+    
+</body>
+</html>

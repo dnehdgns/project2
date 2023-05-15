@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        * { margin: 0; padding: 0; }
+        li {
+            margin: 30px;
+        }
+        ul li {
+            width: 250px;
+            height: 40px;
+            border: 1px solid #000;
+            margin-bottom: 5px;
+            text-align: center;
+            line-height: 40px;
+            list-style: none;
+        }
+    </style>   
+    <script>
+        'use strict'
+        let dan, result,output;
+        dan = Number(prompt('단을 입력하세요',''));
+        output ='';
+
+        output += '<ul>';
+
+        for(let i=1; i<=9; i++) {
+            result = dan * i;
+
+            output += '<li>'+dan+' * '+i+' = '+result+'</li>';
+        }
+        output += '</ul>'
+
+        document.write(output)
+    </script> 
+</head>
+<body>
+   <ul>
+    <!-- <li>2 x 1 = 2</li> -->
+   </ul>
+</body>
+</html>

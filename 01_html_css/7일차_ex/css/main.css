@@ -1,0 +1,14 @@
+#wrap { width: 100%; }
+#header { width: 100%; background: red;}
+#header .inner { width: 1300px; height: 150px; margin: auto; background: aqua; }
+#visual { background: violet; width: 100%; height: 800px }
+#container {}
+#content {}
+/* 첫페이지 시작 */
+.main {}
+.main .con-box { width: 100%; }
+.main .con-box .inner { width: 1300px; margin: auto; padding: 100px; box-sizing: border-box;}
+
+/* con1안에 해보기 */
+.main .con1 {}
+.main .con1 h2 {}

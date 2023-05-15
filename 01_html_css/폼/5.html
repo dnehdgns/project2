@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <style>
+        span {
+            display: block;
+            width: 150px;
+        }
+    </style>   
+</head>
+<body>
+   
+    <input type="text" placeholder="숫자만입력">
+    <select>
+        <option value="">단위선택</option>
+        <option value="cm">cm</option>
+        <option value="m">m</option>
+        <option value="mm">mm</option>
+    </select>
+    <button>확인</button>
+    <span>aaa</span>
+    <script>
+        'use strict';
+
+        let input = document.querySelector('input');
+        let span = document.querySelector('span')
+        let btn = document.querySelector('button');
+        let sel = document.querySelector('select');
+        let result = 0, num = 0;
+        let dan = '';
+
+        btn.addEventListener('click', e => {
+            if(!isNaN(input.value)) {
+                num = (Number(input.value)*2.54).toFixed(2);
+                dan = sel.value;
+                if(dan == 'cm') {
+                    result = num;
+                    span.textContent = result+dan;
+                } else if (dan == 'm') {
+                    result = (num/100);
+                    span.textContent = result+dan;
+                } else if (dan == 'mm') {
+                    result = num*10;
+                    span.textContent = result+dan;
+                }
+            } else {
+                span.textContent = '숫자가 아닙니다'
+            }
+        })
+    </script> 
+</body>
+</html>

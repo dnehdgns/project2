@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .box {
+            width: 500px;
+            margin: auto;
+        }
+        .box div {
+            width: 500px; height: 450px;
+            border: 1px solid #000;
+            margin-bottom: 50px;
+            background-image: url(images/a1.png);
+            background-repeat: no-repeat;
+        }
+        .a1 {
+        }
+        .a2 {
+            /* 배경의 왼쪽 상단이 기준 */
+            background-position: 50px 100px;
+        }
+        .a3 {
+            /* 키워드 : 영역(부모)를 기준 */
+            background-position: right top;
+        }
+        .a4 {
+            background-position: center;
+        }
+        .a5 {
+            /* %는 부모를 기준 */
+            background-position: 60% 40%;
+        }
+        .a6 {
+            background-position: right 20px bottom 10px;
+        }
+    </style>
+</head>
+<body>
+     
+    <div class="box">
+        <div class="a1"></div>
+        <div class="a2"></div>
+        <div class="a3"></div>
+        <div class="a4"></div>
+        <div class="a5"></div>
+        <div class="a6"></div>
+    </div>
+
+    <pre>
+        ------------------
+
+        background-position : x y
+
+        background-position-x : x
+        background-position-y : x
+
+        x : left / center / right
+        y : top / center / bottom
+
+        background-position: right 20px bottom 10px;
+    </pre>
+</body>
+</html>
